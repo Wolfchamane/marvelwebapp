@@ -1,10 +1,9 @@
 import './styles.sass';
-import { CharacterCard } from './character-card';
-import { OutputHttpAdapter } from './output.http-adapter';
-import { DefaultCharactersUseCases } from './use-cases';
+import { CharacterCard } from './components/character-card';
+import { provideCharactersUseCases } from './graph';
 
 export async function CharactersPage() {
-	const useCases = new DefaultCharactersUseCases(new OutputHttpAdapter());
+	const useCases = provideCharactersUseCases();
 	await useCases.fetchCharacters();
 
 	return (

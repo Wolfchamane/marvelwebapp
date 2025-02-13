@@ -13,7 +13,9 @@ export namespace CharactersTypes {
 		| 'Unknown'
 		| 'Nucleico benigno'
 		| 'Nucleico';
+
 	export type CharacterGender = 'Male' | 'Female' | 'Other' | 'Unknown';
+
 	export type CharacterAffiliation =
 		| 'Z Fighter'
 		| 'Red Ribbon Army'

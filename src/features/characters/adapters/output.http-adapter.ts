@@ -1,5 +1,5 @@
-import { DefaultXHR, type XHRError } from '../../lib/xhr';
-import { CharactersPorts, CharactersTypes } from './types';
+import { DefaultXHR, type XHRError } from '../../../lib/xhr';
+import { CharactersPorts, CharactersTypes } from '../types';
 
 export class OutputHttpAdapter extends DefaultXHR implements CharactersPorts {
 	private _mapItemToCharacter(item: Record<string, any>): CharactersTypes.Character {

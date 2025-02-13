@@ -1,4 +1,4 @@
-import type { CharactersPorts, CharactersTypes, CharactersUseCases } from './types';
+import type { CharactersPorts, CharactersTypes, CharactersUseCases } from '../types';
 
 export class DefaultCharactersUseCases implements CharactersUseCases {
 	characters: CharactersTypes.Character[] = [];
