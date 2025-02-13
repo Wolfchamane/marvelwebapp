@@ -1,0 +1,7 @@
+$black: #000
+$white: #fff
+
+$baseColors: ('black': $black, 'white': $white)
+
+@function color($name)
+  @return map-get($baseColors, $name)
