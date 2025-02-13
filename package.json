@@ -1,24 +1,29 @@
 {
-  "name": "zara-web-challenge-arturo-martinez-diaz",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "devDependencies": {
-    "@types/node": "22.13.2",
-    "@types/react": "19.0.8",
-    "eslint": "9.20.1",
-    "eslint-config-next": "15.1.7",
-    "eslint-config-prettier": "^10.0.1",
-    "next": "^15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sass": "^1.84.0",
-    "typescript": "^5.5.3"
-  },
-  "private": true
+	"name": "dragonball-api-webapp",
+	"author": "Arturo Martínez Diaz",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"format": "prettier --check --config .prettierrc.cjs .",
+		"format:fix": "prettier --write --config .prettierrc.cjs ."
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"@types/node": "22.13.2",
+		"@types/react": "19.0.8",
+		"eslint": "9.20.1",
+		"eslint-config-next": "15.1.7",
+		"eslint-config-prettier": "^10.0.1",
+		"next": "^15.1.7",
+		"prettier": "^3.5.1",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"sass": "^1.84.0",
+		"typescript": "^5.5.3"
+	},
+	"private": true
 }
