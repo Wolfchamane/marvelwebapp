@@ -1,6 +1,8 @@
+import './styles.sass';
 import Image from 'next/image';
 import Link from 'next/link';
-import './styles.sass';
+// @ts-ignore
+import logo from '@/assets/logo.png';
 import { FavouriteIcon } from '@/components/favourite-icon';
 
 export interface NavigationBarProperties {
@@ -14,7 +16,7 @@ export function NavigationBar({ favourites }: NavigationBarProperties) {
 			<ul className={'navigation-bar__menu'}>
 				<li>
 					<Link href={'/'}>
-						<Image src={'/assets/logo.png'} alt={'Marvel Characters'} width={130} height={52} />
+						<Image src={logo} alt={'Marvel Characters'} width={130} height={52} />
 					</Link>
 				</li>
 				<li className={'navigation-bar__empty'}>&nbsp;</li>
