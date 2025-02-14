@@ -1,8 +1,8 @@
 import '@/styles/lib/_icons.sass';
+import Image from 'next/image';
 // @ts-ignore
 import searchIcon from '@/assets/search.svg';
-import Image from 'next/image';
 
 export function SearchIcon() {
-    return <Image src={searchIcon} className={"icon"} alt={"Search"}/>
+	return <Image src={searchIcon} className={'icon'} alt={'Search'} />;
 }
