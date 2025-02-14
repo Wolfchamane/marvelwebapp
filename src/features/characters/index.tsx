@@ -1,6 +1,7 @@
 import './styles.sass';
-import { CharacterCard } from '@/components/index';
+import { CharacterCard, SearchInput } from '@/components/index';
 import { provideCharactersUseCases } from './graph';
+import type {FormEventHandler} from "react";
 
 export async function CharactersPage() {
 	const useCases = provideCharactersUseCases();
@@ -9,7 +10,7 @@ export async function CharactersPage() {
 	return (
 		<div className={'characters-page'}>
 			<form>
-				<div>Will be a form here</div>
+				<SearchInput/>
 				<span>{useCases.characters.length} RESULTS</span>
 			</form>
 			<div className={'characters-page__list'}>

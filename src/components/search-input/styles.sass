@@ -1,0 +1,19 @@
+@use '@/styles/lib/colors'
+
+.form-control
+  display: flex
+  align-items: center
+  width: calc(100% - 1em)
+  margin: .5em
+  border-bottom: 1px solid colors.color('black')
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
+
+.form-input
+  border: 0
+  outline: 0
+  text-transform: uppercase
