@@ -9,8 +9,6 @@ export interface CharacterCardProperties {
 }
 
 export function CharacterCard({ name, image, isFavourite }: CharacterCardProperties) {
-	console.log(name, isFavourite);
-
 	return (
 		<div className={'character-card'}>
 			<div className={'character-card__image'}>

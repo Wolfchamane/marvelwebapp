@@ -3,7 +3,6 @@ import { CharactersPorts, CharactersTypes } from '../types';
 
 export class OutputHttpAdapter extends DefaultXHR implements CharactersPorts {
 	private _mapItemToCharacter(item: Record<string, any>): CharactersTypes.Character {
-		debugger;
 		return {
 			$id: item.id,
 			name: item.name,
