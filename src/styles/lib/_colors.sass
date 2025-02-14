@@ -1,3 +1,4 @@
+@use "sass:map"
 $black: #000
 $white: #fff
 $red: #f00
@@ -5,4 +6,4 @@ $red: #f00
 $baseColors: ('black': $black, 'white': $white, 'red': $red)
 
 @function color($name)
-  @return map-get($baseColors, $name)
+  @return map.get($baseColors, $name)

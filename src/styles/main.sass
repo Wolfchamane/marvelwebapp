@@ -1,6 +1,8 @@
-@import './reset'
-@import './lib'
-@import './components'
+@use 'reset'
+@use 'lib'
+@use 'components'
+@use "lib/colors"
+@use "lib/fonts"
 
 html,
 body
@@ -11,7 +13,7 @@ body
   height: 100vh
   margin: 0
   padding: 0
-  color: color('black')
-  font: normal normal 16px/1 $font-family
-  background-color: color('white')
+  color: colors.color('black')
+  font: normal normal 16px/1 fonts.$font-family
+  background-color: colors.color('white')
   overflow: hidden
