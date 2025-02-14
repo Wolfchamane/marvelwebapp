@@ -9,6 +9,9 @@ export interface CharacterCardProperties {
 }
 
 export function CharacterCard({ name, image, isFavourite }: CharacterCardProperties) {
+
+	console.log(name, isFavourite);
+
 	return (
 		<div className={'character-card'}>
 			<div className={'character-card__image'}>
@@ -17,7 +20,7 @@ export function CharacterCard({ name, image, isFavourite }: CharacterCardPropert
 			</div>
 			<div className={'character-card__name'}>
 				<span className={'character-card__name-text'}>{name}</span>
-				<FavouriteIcon filled={isFavourite} />
+				<div className={['character-card__heart', isFavourite ? 'character-card__heart--filled' : ''].filter(Boolean).join(' ')} />
 			</div>
 		</div>
 	);
