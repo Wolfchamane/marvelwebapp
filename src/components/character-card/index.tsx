@@ -1,6 +1,6 @@
-import './styles.sass';
 import Image from 'next/image';
-import { FavouriteIcon } from "@/components/index";
+import './styles.sass';
+import { FavouriteIcon } from '@/components/index';
 
 export interface CharacterCardProperties {
 	name: string;
@@ -12,12 +12,12 @@ export function CharacterCard({ name, image, isFavourite }: CharacterCardPropert
 	return (
 		<div className={'character-card'}>
 			<div className={'character-card__image'}>
-				<Image src={image} alt={name} height={189.97} width={172.5}/>
+				<Image src={image} alt={name} height={189.97} width={172.5} />
 				<span className={'character-card__ribbon'}></span>
 			</div>
 			<div className={'character-card__name'}>
 				<span className={'character-card__name-text'}>{name}</span>
-				<FavouriteIcon filled={isFavourite}/>
+				<FavouriteIcon filled={isFavourite} />
 			</div>
 		</div>
 	);

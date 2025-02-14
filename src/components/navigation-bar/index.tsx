@@ -1,7 +1,7 @@
-import './styles.sass';
 import Image from 'next/image';
 import Link from 'next/link';
-import {FavouriteIcon} from "@/components/favourite-icon";
+import './styles.sass';
+import { FavouriteIcon } from '@/components/favourite-icon';
 
 export interface NavigationBarProperties {
 	favourites?: number;
@@ -20,7 +20,7 @@ export function NavigationBar({ favourites }: NavigationBarProperties) {
 				<li className={'navigation-bar__empty'}>&nbsp;</li>
 				<li className={'navigation-bar__favourites'}>
 					<Link href={'/src/app/favourites'}>
-						<FavouriteIcon filled={!!favourites}/>
+						<FavouriteIcon filled={!!favourites} />
 					</Link>
 					<span className={'navigation-bar__favourites-text'}>{favourites}</span>
 				</li>
