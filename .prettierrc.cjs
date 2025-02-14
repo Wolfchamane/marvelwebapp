@@ -17,7 +17,7 @@ module.exports = {
 	endOfLine: 'lf',
 	singleAttributePerLine: false,
 	htmlWhitespaceSensitivity: 'css',
-	importOrder: ['^./(.*).s(a|c)ss$', '^@/(.*)', '^../(.*)', '^./'],
+	importOrder: ['^./(.*).s(a|c)ss$', 'next/(.*)', '^@/(.*)', '^../(.*)', '^./'],
 	importOrderSeparation: false,
 	importOrderSortSpecifiers: true,
 };

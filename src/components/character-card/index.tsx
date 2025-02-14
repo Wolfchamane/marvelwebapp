@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import './styles.sass';
+import Image from 'next/image';
 import { FavouriteIcon } from '@/components/index';
 
 export interface CharacterCardProperties {
