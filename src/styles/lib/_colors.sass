@@ -2,8 +2,12 @@
 $black: #000
 $white: #fff
 $red: #f00
+$primary: #ec1d24
 
 $baseColors: ('black': $black, 'white': $white, 'red': $red)
+$appColors: ('primary': $primary)
+
+$colors: map.merge($baseColors, $appColors)
 
 @function color($name)
-  @return map.get($baseColors, $name)
+  @return map.get($colors, $name)
