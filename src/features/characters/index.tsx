@@ -1,5 +1,5 @@
 import './styles.sass';
-import { CharacterCard } from './components/character-card';
+import { CharacterCard } from '@/components/index';
 import { provideCharactersUseCases } from './graph';
 
 export async function CharactersPage() {
