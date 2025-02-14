@@ -3,21 +3,12 @@ import { CharactersPorts, CharactersTypes } from '../types';
 
 export class OutputHttpAdapter extends DefaultXHR implements CharactersPorts {
 	private _mapItemToCharacter(item: Record<string, any>): CharactersTypes.Character {
+		debugger;
 		return {
 			$id: item.id,
 			name: item.name,
 			image: item.image,
 			isFavourite: false,
-			details: {
-				name: item.name,
-				ki: item.ki,
-				maxKi: item.maxKi,
-				description: item.description,
-				race: item.race,
-				gender: item.gender,
-				affiliation: item.affiliation,
-				originPlanet: '',
-			},
 		};
 	}
 
