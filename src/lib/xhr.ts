@@ -30,27 +30,27 @@ export class DefaultXHR implements XHR {
 			target += url.substring(1);
 		}
 
-		if (params) {
-			const queryParams = JSON.parse(JSON.stringify(params));
-			if (/({\w+})/g.test(target)) {
-				target = target.replace(/({\w+})/g, match => {
-					const key: string = match.replace(/[{}]+/g, '');
-					const value = queryParams[key];
-					if (value) {
-						delete queryParams[key];
-					}
+		const queryParams: Record<string, any> = Object.assign({}, params || {}, {
+			apikey: `${import.meta.env.VITE_API_KEY}`,
+		});
+		if (/({\w+})/g.test(target)) {
+			target = target.replace(/({\w+})/g, match => {
+				const key: string = match.replace(/[{}]+/g, '');
+				const value = queryParams[key];
+				if (value) {
+					delete queryParams[key];
+				}
 
-					return value;
-				});
-			}
-
-			target = [
-				target,
-				Object.keys(queryParams)
-					.map(key => `${key}=${queryParams[key]}`)
-					.join('&'),
-			].join('?');
+				return value;
+			});
 		}
+
+		target = [
+			target,
+			Object.keys(queryParams)
+				.map(key => `${key}=${queryParams[key]}`)
+				.join('&'),
+		].join('?');
 
 		return target;
 	}
