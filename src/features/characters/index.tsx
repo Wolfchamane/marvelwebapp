@@ -1,10 +1,13 @@
-import type { FormEventHandler } from 'react';
 import './styles.sass';
 import { CharacterCard, SearchInput } from '@/components/index';
-import { provideCharactersUseCases } from './graph';
+import { OutputHttpAdapter } from './adapters/output.http-adapter';
+import { DefaultCharactersUseCases } from './application/use-cases';
+import type { CharactersUseCases } from './types';
+
+const provideCharactersUseCases = (): CharactersUseCases => new DefaultCharactersUseCases(new OutputHttpAdapter());
 
 export async function CharactersPage() {
-	const useCases = provideCharactersUseCases();
+	const useCases: CharactersUseCases = provideCharactersUseCases();
 	await useCases.fetchCharacters();
 
 	return (
@@ -17,6 +20,7 @@ export async function CharactersPage() {
 				{useCases.characters.map(item => (
 					<CharacterCard
 						key={`character-${item.$id}`}
+						id={item.$id}
 						name={item.name}
 						image={item.image}
 						isFavourite={item.isFavourite}
