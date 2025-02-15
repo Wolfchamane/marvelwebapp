@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './styles.sass';
 
 export interface CharacterCardProperties {
@@ -9,7 +10,7 @@ export interface CharacterCardProperties {
 
 export function CharacterCard({ id, name, image, isFavourite }: CharacterCardProperties) {
 	return (
-		<a className={'character-card'} href={`/character/${id}`}>
+		<Link className={'character-card'} to={`/character/${id}`}>
 			<div className={'character-card__image'}>
 				<img src={image} alt={name} height={189.97} width={172.5} />
 				<span className={'character-card__ribbon'}></span>
@@ -22,6 +23,6 @@ export function CharacterCard({ id, name, image, isFavourite }: CharacterCardPro
 						.join(' ')}
 				/>
 			</div>
-		</a>
+		</Link>
 	);
 }

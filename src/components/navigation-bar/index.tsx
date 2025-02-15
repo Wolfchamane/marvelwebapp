@@ -1,7 +1,7 @@
 import './styles.sass';
 // @ts-ignore
 import logo from '@/assets/logo.png';
-import { FavouriteIcon } from '@/components/favourite-icon/index.tsx';
+import { FavouriteIcon } from '../favourite-icon';
 
 export interface NavigationBarProperties {
 	favourites?: number;
