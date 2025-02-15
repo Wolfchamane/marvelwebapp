@@ -1,4 +1,3 @@
-import Image from 'next/image';
 // @ts-ignore
 import heartEmpty from '@/assets/heart_empty.png';
 // @ts-ignore
@@ -9,5 +8,5 @@ export interface FavouriteIconProperties {
 }
 
 export function FavouriteIcon({ filled }: FavouriteIconProperties) {
-	return <Image src={filled ? heartFilled : heartEmpty} alt={'Favourite'} />;
+	return <img src={filled ? heartFilled : heartEmpty} alt={'Favourite'} />;
 }

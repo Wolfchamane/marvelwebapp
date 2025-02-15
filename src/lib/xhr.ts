@@ -25,7 +25,7 @@ export class DefaultXHR implements XHR {
 	private controller: AbortController | undefined;
 
 	private _parseURL(url: string, params?: Record<string, any>): string {
-		let target: string = `https://${process.env.API_HOSTNAME}`;
+		let target: string = `https://${import.meta.env.VITE_API_HOSTNAME}`;
 		if (url.startsWith('/') && target.endsWith('/')) {
 			target += url.substring(1);
 		}

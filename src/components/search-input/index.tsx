@@ -1,8 +1,5 @@
-'use client';
-
-import React from 'react';
 import './styles.sass';
-import { SearchIcon } from '@/components/search-icon';
+import { SearchIcon } from '../search-icon';
 
 export interface SearchInputProperties {
 	onChange(value: string): void;

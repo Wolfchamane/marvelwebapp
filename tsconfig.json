@@ -1,34 +1,4 @@
 {
-	"compilerOptions": {
-		"target": "es2016",
-		"module": "commonjs",
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"strict": true,
-		"skipLibCheck": true,
-		"outDir": "dist",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"allowJs": true,
-		"noEmit": true,
-		"incremental": true,
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"jsx": "preserve",
-		"baseUrl": "./src/",
-		"paths": {
-			"@/styles/*": ["styles/*"],
-			"@/components/*": ["components/*"],
-			"@/assets/*": ["assets/*"],
-			"@/features/*": ["features/*"],
-			"@/lib/*": ["lib/*"]
-		},
-		"plugins": [
-			{
-				"name": "next"
-			}
-		]
-	},
-	"include": ["src", ".next/types/**/*.ts"],
-	"exclude": ["node_modules"]
+	"files": [],
+	"references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }

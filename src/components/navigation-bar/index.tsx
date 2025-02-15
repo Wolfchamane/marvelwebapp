@@ -1,9 +1,7 @@
 import './styles.sass';
-import Image from 'next/image';
-import Link from 'next/link';
 // @ts-ignore
 import logo from '@/assets/logo.png';
-import { FavouriteIcon } from '@/components/favourite-icon';
+import { FavouriteIcon } from '@/components/favourite-icon/index.tsx';
 
 export interface NavigationBarProperties {
 	favourites?: number;
@@ -15,15 +13,15 @@ export function NavigationBar({ favourites }: NavigationBarProperties) {
 		<nav className={'navigation-bar'}>
 			<ul className={'navigation-bar__menu'}>
 				<li>
-					<Link href={'/'}>
-						<Image src={logo} alt={'Marvel Characters'} width={130} height={52} />
-					</Link>
+					<a href={'/'}>
+						<img src={logo} alt={'Marvel Characters'} width={130} height={52} />
+					</a>
 				</li>
 				<li className={'navigation-bar__empty'}>&nbsp;</li>
 				<li className={'navigation-bar__favourites'}>
-					<Link href={'/src/app/favourites'}>
+					<a href={'/src/app/favourites'}>
 						<FavouriteIcon filled={!!favourites} />
-					</Link>
+					</a>
 					<span className={'navigation-bar__favourites-text'}>{favourites}</span>
 				</li>
 			</ul>

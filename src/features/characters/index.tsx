@@ -1,20 +1,37 @@
 import './styles.sass';
-import { CharacterCard, SearchForm } from '@/components/index';
+import { useState, useEffect, useCallback } from 'react';
+import { CharacterCard, SearchForm } from '../../components';
 import { OutputHttpAdapter } from './adapters/output.http-adapter';
 import { DefaultCharactersUseCases } from './application/use-cases';
-import type { CharactersUseCases } from './types';
+import type { CharactersUseCases, CharactersTypes } from './types';
 
 const provideCharactersUseCases = (): CharactersUseCases => new DefaultCharactersUseCases(new OutputHttpAdapter());
 
-export async function CharactersPage() {
-	const useCases: CharactersUseCases = provideCharactersUseCases();
-	await useCases.fetchCharacters();
+export * from './route';
+
+export function CharactersPage() {
+	const [useCases/*, setUseCases*/] = useState<CharactersUseCases>(provideCharactersUseCases());
+	const [ characters, setCharacters ] = useState<CharactersTypes.Character[]>([]);
+	const [ isLoading, setIsLoading ] = useState<boolean>(true);
+
+	const loadCharacters = useCallback(async () => {
+		if (!isLoading) {
+			return;
+		}
+		await useCases?.fetchCharacters();
+		setCharacters(useCases.characters);
+		setIsLoading(false);
+	}, [ isLoading ]);
+
+	useEffect(() => {
+		loadCharacters();
+	}, [ loadCharacters ]);
 
 	return (
 		<div className={'characters-page'}>
-			<SearchForm results={useCases.characters.length} />
+			<SearchForm results={characters.length || 0} />
 			<div className={'characters-page__list'}>
-				{useCases.characters.map(item => (
+				{characters.map(item => (
 					<CharacterCard
 						key={`character-${item.$id}`}
 						id={item.$id}

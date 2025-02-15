@@ -1,6 +1,4 @@
 import './styles.sass';
-import Image from 'next/image';
-import Link from 'next/link';
 
 export interface CharacterCardProperties {
 	id: number;
@@ -11,9 +9,9 @@ export interface CharacterCardProperties {
 
 export function CharacterCard({ id, name, image, isFavourite }: CharacterCardProperties) {
 	return (
-		<Link className={'character-card'} href={`/character/${id}`}>
+		<a className={'character-card'} href={`/character/${id}`}>
 			<div className={'character-card__image'}>
-				<Image src={image} alt={name} height={189.97} width={172.5} />
+				<img src={image} alt={name} height={189.97} width={172.5} />
 				<span className={'character-card__ribbon'}></span>
 			</div>
 			<div className={'character-card__name'}>
@@ -24,6 +22,6 @@ export function CharacterCard({ id, name, image, isFavourite }: CharacterCardPro
 						.join(' ')}
 				/>
 			</div>
-		</Link>
+		</a>
 	);
 }
