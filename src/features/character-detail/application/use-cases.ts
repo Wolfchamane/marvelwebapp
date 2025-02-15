@@ -1,9 +1,5 @@
-import type {
-	CharacterDetailsPorts,
-	CharacterDetailsTypes,
-	CharacterDetailsUseCases,
-} from '@/features/character-detail/types';
-import type { Nullable } from '@/lib/nullable';
+import type { Nullable } from '../../../lib/nullable';
+import type { CharacterDetailsPorts, CharacterDetailsTypes, CharacterDetailsUseCases } from '../types';
 
 export class DefaultCharacterDetailsUseCases implements CharacterDetailsUseCases {
 	character: Nullable<CharacterDetailsTypes.Character> = null;

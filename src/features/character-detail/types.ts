@@ -1,4 +1,4 @@
-import type { Nullable } from '@/lib/nullable';
+import type { Nullable } from '../../lib/nullable';
 
 export namespace CharacterDetailsTypes {
 	export interface OriginPlanet {

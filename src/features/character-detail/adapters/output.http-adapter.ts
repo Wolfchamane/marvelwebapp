@@ -1,5 +1,5 @@
-import { DefaultXHR, type XHRError } from '@/lib/xhr';
-import { CharacterDetailsPorts, CharacterDetailsTypes } from '../types';
+import { DefaultXHR, type XHRError } from '../../../lib/xhr';
+import type { CharacterDetailsPorts, CharacterDetailsTypes } from '../types';
 
 export class OutputHttpAdapter extends DefaultXHR implements CharacterDetailsPorts {
 	private _mapItemToCharacter(item: Record<string, any>): CharacterDetailsTypes.Character {
@@ -23,7 +23,7 @@ export class OutputHttpAdapter extends DefaultXHR implements CharacterDetailsPor
 			},
 			race: item.race,
 			transformations: (item.transformations || []).map((t: Record<string, any>) => ({ ...t, $id: t.id })),
-			isFavourite: /goku/gi.test(item.name),
+			isFavourite: false,
 		};
 	}
 
