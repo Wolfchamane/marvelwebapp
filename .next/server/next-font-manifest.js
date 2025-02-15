@@ -1,2 +1,0 @@
-self.__NEXT_FONT_MANIFEST =
-	'{"pages":{},"app":{"/Users/arturo/Projects/com.github/dragonball-api-webapp/src/app/layout":["static/media/52db2a4aafb407ce-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
