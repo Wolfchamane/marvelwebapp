@@ -6,16 +6,20 @@ export namespace CharactersTypes {
 		isFavourite: boolean;
 	}
 
-	export interface FetchCharactersOutput {
-		characters: Character[];
+	export interface FetchCharactersUseCaseInput {
+		name?: string;
+	}
+
+	export interface FetchCharactersPortInput {
+		name?: string;
 	}
 }
 
 export interface CharactersPorts {
-	fetchCharacters(): Promise<CharactersTypes.FetchCharactersOutput>;
+	fetchCharacters(input: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[]>;
 }
 
 export interface CharactersUseCases {
 	characters: CharactersTypes.Character[];
-	fetchCharacters(): Promise<void>;
+	fetchCharacters(input: CharactersTypes.FetchCharactersUseCaseInput): Promise<void>;
 }

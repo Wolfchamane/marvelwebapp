@@ -11,22 +11,24 @@ export class OutputHttpAdapter extends DefaultXHR implements CharactersPorts {
 		};
 	}
 
-	private _mapResponseToOutput(
-		response: object | string | undefined | XHRError
-	): CharactersTypes.FetchCharactersOutput {
-		return {
-			characters:
-				typeof response === 'object' && 'items' in response && Array.isArray(response.items)
-					? response.items.map(this._mapItemToCharacter.bind(this))
-					: [],
-		};
+	private _mapResponseToOutput(response: object | string | undefined | XHRError): CharactersTypes.Character[] {
+		return typeof response === 'object' && 'items' in response && Array.isArray(response.items)
+			? response.items.map(this._mapItemToCharacter.bind(this))
+			: Array.isArray(response)
+				? response.map(this._mapItemToCharacter.bind(this))
+				: [];
 	}
 
-	async fetchCharacters(): Promise<CharactersTypes.FetchCharactersOutput> {
+	async fetchCharacters({ name }: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[]> {
+		const params: Record<string, any> = { limit: 50 };
+		if (name) {
+			params.name = name;
+		}
+
 		return this._mapResponseToOutput(
 			await this.fetch('/characters', {
 				method: 'GET',
-				params: { limit: 50 },
+				params,
 				headers: {
 					Accept: 'application/json',
 					'Content-Type': 'application/json',

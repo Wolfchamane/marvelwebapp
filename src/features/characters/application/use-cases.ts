@@ -5,7 +5,7 @@ export class DefaultCharactersUseCases implements CharactersUseCases {
 
 	constructor(private readonly ports: CharactersPorts) {}
 
-	async fetchCharacters(): Promise<void> {
-		this.characters = (await this.ports.fetchCharacters()).characters;
+	async fetchCharacters(input: CharactersTypes.FetchCharactersUseCaseInput): Promise<void> {
+		this.characters = await this.ports.fetchCharacters(input);
 	}
 }

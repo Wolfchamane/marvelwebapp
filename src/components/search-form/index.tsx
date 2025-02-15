@@ -3,17 +3,30 @@ import { SearchInput } from '../search-input';
 
 export interface SearchFormProperties {
 	results: number;
+	onSearch(text: string): Promise<void>;
 }
 
-export function SearchForm({ results }: SearchFormProperties) {
+export function SearchForm({ results, onSearch }: SearchFormProperties) {
 	const [search, setSearch] = useState('');
 
-	const handleInputChange = (value: string): void => setSearch(value);
+	const handleInputChange = async (value: string): Promise<void> => {
+		setSearch(value);
+	};
+
+	const onSubmit = async (e: any): Promise<void> => {
+		if ('stopPropagation' in e) {
+			e.stopPropagation();
+			e.preventDefault();
+			await onSearch(search);
+		}
+	};
 
 	return (
-		<form>
+		<form onSubmit={onSubmit}>
 			<SearchInput onChange={handleInputChange} />
-			<span>{results} resultados</span>
+			<span>
+				{results >= 2 ? `${results} resultados` : results === 1 ? `${results} resultado` : 'sin resultados'}
+			</span>
 		</form>
 	);
 }
