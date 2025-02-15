@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react';
+import { URL, fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import webfontDownload from 'vite-plugin-webfont-dl';
-import { URL, fileURLToPath } from 'node:url';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,7 +11,7 @@ export default defineConfig({
 			{
 				find: '@',
 				replacement: fileURLToPath(new URL('./src', import.meta.url)),
-			}
-		]
-	}
+			},
+		],
+	},
 });
