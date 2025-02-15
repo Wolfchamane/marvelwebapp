@@ -1,5 +1,5 @@
 import './styles.sass';
-import { CharacterCard, SearchInput } from '@/components/index';
+import { CharacterCard, SearchForm } from '@/components/index';
 import { OutputHttpAdapter } from './adapters/output.http-adapter';
 import { DefaultCharactersUseCases } from './application/use-cases';
 import type { CharactersUseCases } from './types';
@@ -12,10 +12,7 @@ export async function CharactersPage() {
 
 	return (
 		<div className={'characters-page'}>
-			<form>
-				<SearchInput />
-				<span>{useCases.characters.length} RESULTS</span>
-			</form>
+			<SearchForm results={useCases.characters.length} />
 			<div className={'characters-page__list'}>
 				{useCases.characters.map(item => (
 					<CharacterCard
