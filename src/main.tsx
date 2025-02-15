@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles/main.sass';
-import { App } from './app/index.tsx';
+import { App } from './app';
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
