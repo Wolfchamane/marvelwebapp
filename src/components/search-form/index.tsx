@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './styles.sass';
 import { SearchInput } from '../search-input';
 
 export interface SearchFormProperties {
@@ -22,9 +23,9 @@ export function SearchForm({ results, onSearch }: SearchFormProperties) {
 	};
 
 	return (
-		<form onSubmit={onSubmit}>
+		<form className={'search-form'} onSubmit={onSubmit}>
 			<SearchInput onChange={handleInputChange} />
-			<span>
+			<span className={'search-form__results'}>
 				{results >= 2 ? `${results} resultados` : results === 1 ? `${results} resultado` : 'sin resultados'}
 			</span>
 		</form>
