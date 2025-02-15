@@ -8,7 +8,7 @@ const font = Roboto_Condensed({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en" className={font.className}>
+		<html lang="es" className={font.className}>
 			<body>
 				<NavigationBar />
 				<main className={'app-main'}>{children}</main>
