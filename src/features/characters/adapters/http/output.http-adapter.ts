@@ -1,5 +1,12 @@
 import type { XHRError } from '../../../../lib/xhr.ts';
-import { type Character, CharactersHttpClient, type CharactersOutput } from '../../infra';
+import {
+	type Character,
+	CharactersHttpClient,
+	CharactersListComicsInput,
+	CharactersListInput,
+	type Comic,
+	type InfraOutput,
+} from '../../infra';
 import type { CharactersPorts, CharactersTypes } from '../../types.ts';
 
 export class OutputHttpAdapter implements CharactersPorts {
@@ -14,7 +21,7 @@ export class OutputHttpAdapter implements CharactersPorts {
 		};
 	}
 
-	private _mapResponseToOutput(response: CharactersOutput): CharactersTypes.Character[] {
+	private _mapResponseToOutput(response: InfraOutput<Character>): CharactersTypes.Character[] {
 		const { data } = response;
 		const { results } = data;
 
@@ -24,12 +31,12 @@ export class OutputHttpAdapter implements CharactersPorts {
 	async fetchCharacters({
 		name,
 	}: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[] | XHRError | undefined> {
-		const params: Record<string, any> = { limit: 50 };
+		const params: CharactersListInput = { limit: 50 };
 		if (name) {
 			params.name = name;
 		}
 
-		const response: CharactersOutput | XHRError | undefined = await this.httpClient.list(params);
+		const response: InfraOutput<Character> | XHRError | undefined = await this.httpClient.list(params);
 
 		return response && 'data' in response ? this._mapResponseToOutput(response) : response;
 	}
@@ -47,12 +54,44 @@ export class OutputHttpAdapter implements CharactersPorts {
 	async describeCharacter({
 		id,
 	}: CharactersTypes.DescribeCharacterPortInput): Promise<CharactersTypes.CharacterDetails | XHRError | undefined> {
-		const response: CharactersOutput | XHRError | undefined = await this.httpClient.describe({ id });
+		const response: InfraOutput<Character> | XHRError | undefined = await this.httpClient.describe({ id });
 
 		return response && 'data' in response && 'results' in response.data
 			? this._mapDetailResponseToApplication(response.data.results[0])
-			: response && 'message' in response
+			: response && 'errorMessage' in response
 				? (response as XHRError)
 				: undefined;
+	}
+
+	private _mapCharacterComicToApplication(comic: Comic): CharactersTypes.CharacterComic {
+		const onSaleDate = comic.dates.find(date => date.type === 'onsaleDate');
+
+		return {
+			$id: comic.id,
+			title: comic.title,
+			year: onSaleDate ? new Date(onSaleDate.date) : null,
+			image: [comic.thumbnail.path, comic.thumbnail.extension].join('.'),
+		};
+	}
+
+	private _mapCharacterComicsToApplication(comics: Comic[]): CharactersTypes.CharacterComic[] {
+		return comics.map(this._mapCharacterComicToApplication.bind(this));
+	}
+
+	async listCharacterComics({
+		id,
+	}: CharactersTypes.ListCharacterComicsPortInput): Promise<CharactersTypes.CharacterComic[] | XHRError | undefined> {
+		const params: CharactersListComicsInput = {
+			limit: 20,
+			id,
+		};
+
+		const response: InfraOutput<Comic> | XHRError | undefined = await this.httpClient.listComics(params);
+
+		return response && 'data' in response && 'results' in response.data
+			? this._mapCharacterComicsToApplication(response.data.results)
+			: response && 'errorCode' in response
+				? (response as XHRError)
+				: response;
 	}
 }

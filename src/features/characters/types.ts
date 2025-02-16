@@ -1,11 +1,13 @@
+import type { Nullable } from '../../lib/nullable.ts';
 import type { XHRError } from '../../lib/xhr.ts';
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace CharactersTypes {
 	export interface CharacterComic {
 		$id: number;
 		title: string;
 		image: string;
-		year: string;
+		year: Nullable<Date>;
 	}
 
 	export interface CharacterDetails {
@@ -14,7 +16,6 @@ export namespace CharactersTypes {
 		name: string;
 		description: string;
 		isFavourite: boolean;
-		comics: CharacterComic[];
 	}
 
 	export interface Character {
@@ -39,6 +40,14 @@ export namespace CharactersTypes {
 	export interface DescribeCharacterPortInput {
 		id: string;
 	}
+
+	export interface ListCharacterComicsPortInput {
+		id: string;
+	}
+
+	export interface ListCharacterComicsUseCaseInput {
+		id: string;
+	}
 }
 
 export interface CharactersPorts {
@@ -48,10 +57,16 @@ export interface CharactersPorts {
 	describeCharacter(
 		input: CharactersTypes.DescribeCharacterPortInput
 	): Promise<CharactersTypes.CharacterDetails | XHRError | undefined>;
+	listCharacterComics(
+		input: CharactersTypes.ListCharacterComicsPortInput
+	): Promise<CharactersTypes.CharacterComic[] | XHRError | undefined>;
 }
 
 export interface CharactersUseCases {
 	characters: CharactersTypes.Character[];
+	character: Nullable<CharactersTypes.CharacterDetails>;
+	comics: CharactersTypes.CharacterComic[];
 	fetchCharacters(input: CharactersTypes.FetchCharactersUseCaseInput): Promise<void>;
-	describeCharacter(input: CharactersTypes.DescribeCharacterUseCaseInput): Promise<CharactersTypes.CharacterDetails>;
+	describeCharacter(input: CharactersTypes.DescribeCharacterUseCaseInput): Promise<void>;
+	listCharacterComics(input: CharactersTypes.ListCharacterComicsUseCaseInput): Promise<void>;
 }
