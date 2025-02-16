@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type XHRMethod = 'GET' | 'PUT' | 'POST' | 'DELETE';
 
 export interface XHRError {
@@ -7,8 +8,8 @@ export interface XHRError {
 
 export interface XHROptions {
 	method: XHRMethod;
-	headers?: Record<string, string>;
-	params?: Record<string, string>;
+	headers?: Record<string, any>;
+	params?: Record<string, any>;
 	body?: object | string;
 }
 
@@ -129,3 +130,4 @@ export class DefaultXHR implements XHR {
 		this.controller?.abort();
 	}
 }
+/* eslint-enable @typescript-eslint/no-explicit-any */
