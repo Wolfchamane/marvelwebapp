@@ -2,6 +2,7 @@ import './styles.sass';
 // @ts-ignore
 import logo from '@/assets/logo.png';
 import { FavouriteIcon } from '../favourite-icon';
+import { useSelector, useDispatch } from 'react-redux'
 
 export interface NavigationBarProperties {
 	favourites?: number;
@@ -9,6 +10,8 @@ export interface NavigationBarProperties {
 }
 
 export function NavigationBar({ favourites }: NavigationBarProperties) {
+	const numOfFavourites: number = useSelector(state => state.favourites.value.length);
+
 	return (
 		<nav className={'navigation-bar'}>
 			<ul className={'navigation-bar__menu'}>
@@ -22,7 +25,7 @@ export function NavigationBar({ favourites }: NavigationBarProperties) {
 					<a href={'/src/app/favourites'}>
 						<FavouriteIcon filled={!!favourites} />
 					</a>
-					<span className={'navigation-bar__favourites-text'}>{favourites}</span>
+					<span className={'navigation-bar__favourites-text'}>{numOfFavourites}</span>
 				</li>
 			</ul>
 			<span className={'navigation-bar__loader'}></span>

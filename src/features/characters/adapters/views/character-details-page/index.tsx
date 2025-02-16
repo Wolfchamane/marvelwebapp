@@ -4,8 +4,11 @@ import { useParams } from 'react-router';
 import { Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
+import { useDispatch } from 'react-redux'
+import { addToFavourites, removeFromFavourites, addToFavouritesAction, removeFromFavouritesAction } from "../../../../favourites/store";
 
 export function CharacterDetailsPage() {
+	const dispatch = useDispatch();
 	const { id } = useParams();
 	const [useCases] = useState<CharactersUseCases>(provideCharactersUseCases());
 	const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -28,6 +31,18 @@ export function CharacterDetailsPage() {
 		fetchCharacterDetails();
 	}, [fetchCharacterDetails]);
 
+	const onClick = () => {
+		if (character && character.isFavourite) {
+			dispatch(removeFromFavourites(removeFromFavouritesAction(character.$id)));
+			setCharacter({ ...character, isFavourite: false });
+		}
+
+		if (character && !character.isFavourite) {
+			dispatch(addToFavourites(addToFavouritesAction(character.$id)));
+			setCharacter({ ...character, isFavourite: true });
+		}
+	};
+
 	return character ? (
 		<section className={'character-details'}>
 			<header className={'character-details__resume'}>
@@ -41,7 +56,7 @@ export function CharacterDetailsPage() {
 				<div className={'character-details__info'}>
 					<div className={'character-details__title'}>
 						<span className={'character-details__name'}>{character?.name}</span>
-						<FavouriteIcon filled={character?.isFavourite} />
+						<button onClick={onClick}><FavouriteIcon filled={character?.isFavourite} /></button>
 					</div>
 					<p className={'character-details__description'}>{character?.description}</p>
 				</div>
