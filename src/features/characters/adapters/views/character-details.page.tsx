@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './character-details.styles.sass';
-import { FavouriteIcon } from '../../../../components';
+import { Carrousel, ComicCard, FavouriteIcon } from '../../../../components';
 import { provideCharactersUseCases } from '../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../types.ts';
 
@@ -10,15 +10,19 @@ export function CharacterDetailsPage() {
 	const [useCases] = useState<CharactersUseCases>(provideCharactersUseCases());
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [character, setCharacter] = useState<CharactersTypes.CharacterDetails | null>(null);
+	const [comics, setComics] = useState<CharactersTypes.CharacterComic[]>([]);
 
 	const fetchCharacterDetails = useCallback(async (): Promise<void> => {
 		if (!isLoading || character) {
 			return;
 		}
 
-		setCharacter(await useCases.describeCharacter({ id: id || '' }));
+		await useCases.describeCharacter({ id: id || '' });
+		await useCases.listCharacterComics({ id: id || '' });
+		setCharacter(useCases.character);
+		setComics(useCases.comics);
 		setIsLoading(false);
-	}, [id, isLoading, character]);
+	}, [id, isLoading, character, comics]);
 
 	useEffect(() => {
 		fetchCharacterDetails();
@@ -42,6 +46,21 @@ export function CharacterDetailsPage() {
 					<p className={'character-details__description'}>{character?.description}</p>
 				</div>
 			</header>
+			<article className={'character-details__comics'}>
+				<header>
+					<h1 className={'character-details__comics-title'}>Comics</h1>
+				</header>
+				<Carrousel>
+					{comics.map(comic => (
+						<ComicCard
+							key={`comic-${comic.$id}`}
+							image={comic.image}
+							title={comic.title}
+							year={comic.year?.getFullYear()}
+						/>
+					))}
+				</Carrousel>
+			</article>
 		</section>
 	) : (
 		<p>Cargando ...</p>
