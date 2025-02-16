@@ -1,0 +1,3299 @@
+{
+	"code": 200,
+	"status": "Ok",
+	"copyright": "© 2025 MARVEL",
+	"attributionText": "Data provided by Marvel. © 2025 MARVEL",
+	"attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2025 MARVEL</a>",
+	"etag": "8e04da937163cd280951ffc8b87145563f6b8746",
+	"data": {
+		"offset": 0,
+		"limit": 20,
+		"total": 1914,
+		"count": 20,
+		"results": [
+			{
+				"id": 119408,
+				"digitalId": 69478,
+				"title": "Immortal Thor (2023) #20",
+				"issueNumber": 20,
+				"variantDescription": "",
+				"description": "THE RETURN OF THE UTGARD-THOR! Toranos, Elder God of the storm, had returned - and his terrible lightning now struck at the Odinson's very heart. His presence in the skies meant the gate to Utgard was once more open. But this time, it would not be closed...not until Thor walked through it. This is the story of the IMMORTAL THOR...as he began the last adventure.",
+				"modified": "2025-01-02T12:05:13-0500",
+				"isbn": "",
+				"upc": "75960620664302011",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119408",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119408/immortal_thor_2023_20?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-20/digital-comic/69478?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=69478&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/125799",
+						"name": "Immortal Thor (2023) #20 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/125800",
+						"name": "Immortal Thor (2023) #20 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/125801",
+						"name": "Immortal Thor (2023) #20 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2025-02-12T00:00:00-0500"
+					},
+					{
+						"type": "focDate",
+						"date": "2025-01-13T00:00:00-0500"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2025-01-30T00:00:00-0500"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2025-01-30T00:00:00-0500"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/67ab71c268c44",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/67ab71c268c44",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119408/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 1,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119408/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 1
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119408/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260040",
+							"name": "cover from Immortal Thor (2023) #20",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260041",
+							"name": "story from Immortal Thor (2023) #20",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119408/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 119407,
+				"digitalId": 71103,
+				"title": "Immortal Thor (2023) #19",
+				"issueNumber": 19,
+				"variantDescription": "",
+				"description": "THIS IS NOT THE STORY OF THE IMMORTAL THOR! The All-Father had a journey to make to a far star - and so, for a time, the Golden Realm was left to rule itself. Yet even in the absence of the King, the story continued - and each Asgardian had their own drama to play out. These are the TALES OF ASGARD... A cavalcade of artists including Jan Bazaldua, Valerio Schiti, Juann Cabal, Martin Coccolo, CAFU, Steve Skroce, Gavin Guidry and many more!",
+				"modified": "2024-12-03T10:48:32-0500",
+				"isbn": "",
+				"upc": "75960620664301911",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119407",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119407/immortal_thor_2023_19?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-19/digital-comic/71103?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=71103&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124842",
+						"name": "Immortal Thor (2023) #19 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124843",
+						"name": "Immortal Thor (2023) #19 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124844",
+						"name": "Immortal Thor (2023) #19 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2025-01-15T00:00:00-0500"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-12-02T00:00:00-0500"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2025-01-07T00:00:00-0500"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2025-01-07T00:00:00-0500"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/03/67803740b56a7",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/03/67803740b56a7",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 28,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119407/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/9799",
+							"name": "David Baldeon",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/1251",
+							"name": "Brett Breeding",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13031",
+							"name": "Juann Cabal",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13689",
+							"name": "C Cafu",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14285",
+							"name": "Martin Coccolo",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14380",
+							"name": "Karen Darboe",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12466",
+							"name": "Jorge Fornes",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/8933",
+							"name": "Lee Garbett",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14582",
+							"name": "Gavin Guidry",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/820",
+							"name": "Leonard Kirk",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14667",
+							"name": "Gleb Melnikov",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/8504",
+							"name": "Frank D'ARMATA",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/430",
+							"name": "Edgar Delgado",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13558",
+							"name": "Juan Ferreyra",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13674",
+							"name": "Espen Grundetjern",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/155",
+							"name": "Dan Jurgens",
+							"role": "penciler"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						}
+					],
+					"returned": 20
+				},
+				"characters": {
+					"available": 1,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119407/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 1
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119407/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260038",
+							"name": "cover from Immortal Thor (2023) #19",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260039",
+							"name": "story from Immortal Thor (2023) #19",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119407/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 119406,
+				"digitalId": 69903,
+				"title": "Immortal Thor (2023) #18",
+				"issueNumber": 18,
+				"variantDescription": "",
+				"description": "THOR VERSUS HIS OLDEST FOES! On Asgard, Thor had been outplayed by the Enchantress - and their game would have vast consequences for the Golden Realm. And on Earth, the self-styled Gods of Midgard made their bid to take the kingdoms of humankind for their own. This is the story of the IMMORTAL THOR...and the heir to the throne of all.",
+				"modified": "2024-11-01T17:11:52-0400",
+				"isbn": "",
+				"upc": "75960620664301811",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119406",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119406/immortal_thor_2023_18?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-18/digital-comic/69903?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=69903&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124368",
+						"name": "Immortal Thor (2023) #18 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124369",
+						"name": "Immortal Thor (2023) #18 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124652",
+						"name": "Immortal Thor (2023) #18 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-12-18T00:00:00-0500"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-11-11T00:00:00-0500"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-12-05T00:00:00-0500"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-12-05T00:00:00-0500"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/4/40/676039c38c76f",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/4/40/676039c38c76f",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 5,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119406/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 5
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119406/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1010671",
+							"name": "Enchantress (Amora)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119406/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260036",
+							"name": "cover from Immortal Thor (2023) #18",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260037",
+							"name": "story from Immortal Thor (2023) #18",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119406/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 119381,
+				"digitalId": 69879,
+				"title": "Captain America (2023) #16",
+				"issueNumber": 16,
+				"variantDescription": "",
+				"description": " \"THE NEW WARRIORS THREE\" PART THREE! Captain America, Spider-Man and Thor are trapped in a mirror dimension harboring Broxton's glory days - and ghosts of Thor's failures are ready to exact their revenge. Can Cap and Spidey help free Thor of his past, or is Broxton's history doomed to repeat itself forever?",
+				"modified": "2024-11-01T17:07:18-0400",
+				"isbn": "",
+				"upc": "75960620740401611",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119381",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119381/captain_america_2023_16?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Captain-America-16/digital-comic/69879?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=69879&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37724",
+					"name": "Captain America (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124317",
+						"name": "Captain America (2023) #16 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124731",
+						"name": "Captain America (2023) #16 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-12-18T00:00:00-0500"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-11-11T00:00:00-0500"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-12-05T00:00:00-0500"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-12-05T00:00:00-0500"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/90/676039c56aa81",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/90/676039c56aa81",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119381/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+							"name": "Vc Joe Caramagna",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14111",
+							"name": "Taurin Clarke",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13674",
+							"name": "Espen Grundetjern",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/1005",
+							"name": "Carlos Magno",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13046",
+							"name": "Alanna Smith",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/4",
+							"name": "J. Michael Straczynski",
+							"role": "writer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119381/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+							"name": "Captain America"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119381/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/259986",
+							"name": "cover from Captain America (2023) #16",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/259987",
+							"name": "story from Captain America (2023) #16",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119381/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 124745,
+				"digitalId": 69855,
+				"title": "ALLIGATOR LOKI HOLIDAY SPECIAL (2024) #1",
+				"issueNumber": 1,
+				"variantDescription": "",
+				"description": "AN ALLIGATOR LOKI HOLIDAY SPECTACULAR! The Alligator of Mischief is back to ruin - I mean, save! - the holidays! Join Alligator Loki and his many, many, many friends - from the X-Men to the Young Avengers to several symbiotes - as they romp across the Marvel Universe, sowing chaos and camaraderie in equal stride! Don't miss a brand-new story starring Alligator Loki and the REAL meaning of the holiday season: frenzy-er, sorry, FAMILY! This issue also collects issues #13-24 of the hit ALLIGATOR LOKI Infinity Comic for the first time in print!",
+				"modified": "2024-11-01T17:05:28-0400",
+				"isbn": "",
+				"upc": "75960621194400111",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 48,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/124745",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/124745/alligator_loki_holiday_special_2024_1?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/ALLIGATOR-LOKI-HOLIDAY-SPECIAL-1-1/digital-comic/69855?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=69855&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/43175",
+					"name": "ALLIGATOR LOKI HOLIDAY SPECIAL (2024 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/124744",
+						"name": "ALLIGATOR LOKI HOLIDAY SPECIAL (2024) #1 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-12-18T00:00:00-0500"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-11-11T00:00:00-0500"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-11-13T00:00:00-0500"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-12-05T00:00:00-0500"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 6.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/30/676039c90a0db",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/30/676039c90a0db",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 4,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/124745/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14531",
+							"name": "Michelle Marchese",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13339",
+							"name": "Pete Pantazis",
+							"role": "colorist (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13539",
+							"name": "Robert Quinn",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13917",
+							"name": "Alyssa Wong",
+							"role": "writer"
+						}
+					],
+					"returned": 4
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/124745/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009407",
+							"name": "Loki"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/124745/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/270771",
+							"name": "cover from Alligator Loki Holiday Special (2024) #1",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/270772",
+							"name": "story from Alligator Loki Holiday Special (2024) #1",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/124745/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 119405,
+				"digitalId": 69135,
+				"title": "Immortal Thor (2023) #17",
+				"issueNumber": 17,
+				"variantDescription": "",
+				"description": "THE GODS OF MIDGARD RISE! Four new gods walked the Earth, called by Thor's foes to be his death - a man of fire, a man of stone, a beast of wrath and a trickster-serpent. All had reason to hate the thunder god...and working together, they had the power to end an All-Father's reign. This is the story of the IMMORTAL THOR...and what broke him at last.",
+				"modified": "2024-10-02T11:29:17-0400",
+				"isbn": "",
+				"upc": "75960620664301711",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119405",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119405/immortal_thor_2023_17?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-17/digital-comic/69135?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=69135&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/123453",
+						"name": "Immortal Thor (2023) #17 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/123454",
+						"name": "Immortal Thor (2023) #17 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/123698",
+						"name": "Immortal Thor (2023) #17 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-11-20T00:00:00-0500"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-10-14T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-10-16T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-11-07T00:00:00-0500"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/a/90/6733708566113",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/a/90/6733708566113",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119405/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 1,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119405/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 1
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119405/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260034",
+							"name": "cover from Immortal Thor (2023) #17",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260035",
+							"name": "story from Immortal Thor (2023) #17",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119405/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 119380,
+				"digitalId": 69125,
+				"title": "Captain America (2023) #15",
+				"issueNumber": 15,
+				"variantDescription": "",
+				"description": " \"THE NEW WARRIORS THREE\" PART TWO! J. Michael Straczynski revisits THOR and SPIDER-MAN! When Captain America, Spidey and Thor find themselves drawn to Broxton, Oklahoma, the trio will have to work together to find what's drawn them to the ruined town - and site of Thor's greatest shame. But what they find may prove too horrifying for even the greatest of heroes to overcome…",
+				"modified": "2024-10-02T11:18:28-0400",
+				"isbn": "",
+				"upc": "75960620740401511",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119380",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119380/captain_america_2023_15?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Captain-America-15/digital-comic/69125?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=69125&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37724",
+					"name": "Captain America (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/123428",
+						"name": "Captain America (2023) #15 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/123429",
+						"name": "Captain America (2023) #15 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/123690",
+						"name": "Captain America (2023) #15 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-11-13T00:00:00-0500"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-10-07T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-10-16T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-11-07T00:00:00-0500"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/67337c7f9c13f",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/67337c7f9c13f",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119380/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+							"name": "Vc Joe Caramagna",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14111",
+							"name": "Taurin Clarke",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12551",
+							"name": "Jesus Saiz",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13046",
+							"name": "Alanna Smith",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/4",
+							"name": "J. Michael Straczynski",
+							"role": "writer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 3,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119380/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+							"name": "Captain America"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+							"name": "Spider-Man (Peter Parker)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 3
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119380/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/259984",
+							"name": "cover from Captain America (2023) #15",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/259985",
+							"name": "story from Captain America (2023) #15",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119380/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 116134,
+				"digitalId": 68901,
+				"title": "Captain America (2023) #14",
+				"issueNumber": 14,
+				"variantDescription": "",
+				"description": "THE NEW WARRIORS THREE! J. Michael Straczynski revisits THOR and SPIDER-MAN! Still reeling from recent events at the Front Door Cabaret, Captain America needs friends now more than ever. But Spidey and Thor have problems of their own, and so the impromptu Warriors Three set out on an adventure that will either draw them closer together or drive them all insane!",
+				"modified": "2024-09-10T16:31:48-0400",
+				"isbn": "",
+				"upc": "75960620740401411",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/116134",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/116134/captain_america_2023_14?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Captain-America-14/digital-comic/68901?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=68901&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37724",
+					"name": "Captain America (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/122400",
+						"name": "Captain America (2023) #14 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/122436",
+						"name": "Captain America (2023) #14 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-10-30T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-09-30T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-09-10T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-10-10T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/2/70/66a3edabe9d4d",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/2/70/66a3edabe9d4d",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/116134/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+							"name": "Vc Joe Caramagna",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14111",
+							"name": "Taurin Clarke",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13674",
+							"name": "Espen Grundetjern",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/1005",
+							"name": "Carlos Magno",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13046",
+							"name": "Alanna Smith",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/4",
+							"name": "J. Michael Straczynski",
+							"role": "writer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 3,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/116134/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+							"name": "Captain America"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+							"name": "Spider-Man (Peter Parker)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 3
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/116134/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/253491",
+							"name": "cover from Captain America (2023) #14",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/253492",
+							"name": "story from Captain America (2023) #14",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/116134/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 119404,
+				"digitalId": 68915,
+				"title": "Immortal Thor (2023) #16",
+				"issueNumber": 16,
+				"variantDescription": "",
+				"description": "In Asgard, Thor weighed his obligations as All-Father and as Gaea's child...and what he owed to both sides of his nature. While on Earth, a risen evil sought new Gods to challenge the old...and found them in Thor's earliest foes. This is the story of the IMMORTAL THOR...and the Radioactive Man.",
+				"modified": "2024-09-17T09:31:46-0400",
+				"isbn": "",
+				"upc": "75960620664301611",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119404",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119404/immortal_thor_2023_16?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-16/digital-comic/68915?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=68915&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/122405",
+						"name": "Immortal Thor (2023) #16 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/122457",
+						"name": "Immortal Thor (2023) #16 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-10-02T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-09-02T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-09-10T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-09-10T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/f0/66fc08ab89580",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/f0/66fc08ab89580",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119404/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119404/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009526",
+							"name": "Radioactive Man"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119404/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260032",
+							"name": "cover from Immortal Thor (2023) #16",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/260033",
+							"name": "story from Immortal Thor (2023) #16",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119404/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 118652,
+				"digitalId": 68478,
+				"title": "AVENGERS ANNUAL (2024) #1",
+				"issueNumber": 1,
+				"variantDescription": "",
+				"description": "\"INFINITY WATCH\" FINALE! The Infinity Stone bearers are all brought together for the first time! If you thought the stones were dangerous in Thanos' hands, imagine if Star gets her way!",
+				"modified": "2024-09-26T10:26:12-0400",
+				"isbn": "",
+				"upc": "75960620978100111",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/118652",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/118652/avengers_annual_2024_1?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/AVENGERS-ANNUAL-1/digital-comic/68478?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=68478&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/41616",
+					"name": "AVENGERS ANNUAL (2024)"
+				},
+				"variants": [],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-09-25T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-08-26T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-09-23T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-09-23T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/a/30/66e347deeb955",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/a/30/66e347deeb955",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 5,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118652/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+							"name": "Guru Efx",
+							"role": "colorist (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12861",
+							"name": "Derek Landy",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/11757",
+							"name": "Salvador Larroca",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/4300",
+							"name": "Nick Lowe",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12980",
+							"name": "Vc Cory Petit",
+							"role": "letterer"
+						}
+					],
+					"returned": 5
+				},
+				"characters": {
+					"available": 3,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118652/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009368",
+							"name": "Iron Man"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009652",
+							"name": "Thanos"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 3
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118652/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/258528",
+							"name": "cover from Infinity Watch: TBD H (2024) #1",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/258529",
+							"name": "story from Infinity Watch: TBD H (2024) #1",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118652/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 114530,
+				"digitalId": 68491,
+				"title": "Immortal Thor (2023) #15",
+				"issueNumber": 15,
+				"variantDescription": "",
+				"description": "RETURN TO ASGARD! In a place of darkness, a deeper darkness threatened to claim Thor - one that only the Odinson himself could defeat. And back in the sunshine of Asgard, the Enchantress waited - to discuss what Thor owed her and what she held over him. This is the story of the IMMORTAL THOR...and of the responsibilities of power.",
+				"modified": "2024-08-21T10:17:11-0400",
+				"isbn": "",
+				"upc": "75960620664301511",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/114530",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/114530/immortal_thor_2023_15?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-15/digital-comic/68491?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=68491&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/115710",
+						"name": "Immortal Thor (2023) #15 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/115711",
+						"name": "Immortal Thor (2023) #15 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120482",
+						"name": "Immortal Thor (2023) #15 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/122601",
+						"name": "Immortal Thor (2023) #15 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-09-04T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-08-05T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-08-29T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-08-29T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/90/66d08294bedcc",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/90/66d08294bedcc",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/114530/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 3,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/114530/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1010671",
+							"name": "Enchantress (Amora)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009343",
+							"name": "Hercules"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 3
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/114530/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/250280",
+							"name": "cover from Immortal Thor (2023) #15",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/250281",
+							"name": "story from Immortal Thor (2023) #15",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/114530/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 119992,
+				"digitalId": 68493,
+				"title": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024) #1",
+				"issueNumber": 1,
+				"variantDescription": "",
+				"description": "IS THIS FOWL WORTHY OF THE HAMMER OF THOR?! When DONALD DUCK chaperones HUEY, DEWEY AND LOUIE on an archaeological trip to search for ancient Viking artifacts, he finds more than he bargained for when he comes across the STONE DUCKS FROM SATURN preparing for an invasion. But everything changes when he discovers an enchanted cane that causes an egg-ceptional transformation, gifting him with the POWER OF THOR! Can he learn how to use his new abilities in time to save DUCKBURG before he changes back? Find out in this mind-twisting retelling of THE MIGHTY THOR'S THUNDEROUS ORIGIN!",
+				"modified": "2024-09-03T12:18:48-0400",
+				"isbn": "",
+				"upc": "75960621014500111",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/119992",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/119992/marvel_disney_what_if_donald_duck_became_thor_2024_1?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/MARVEL-DISNEY-WHAT-IF-DONALD-DUCK-BECAME-THOR-1/digital-comic/68493?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=68493&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/41795",
+					"name": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120877",
+						"name": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120878",
+						"name": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120879",
+						"name": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120880",
+						"name": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120881",
+						"name": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120889",
+						"name": "MARVEL & DISNEY: WHAT IF…? DONALD DUCK BECAME THOR (2024) #1 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-09-04T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-08-05T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-08-29T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-08-29T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/80/66d0828de1edb",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/80/66d0828de1edb",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 4,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119992/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14657",
+							"name": "Edizioni Bd",
+							"role": "colorist (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/4600",
+							"name": "Mark Paniccia",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13334",
+							"name": "Lorenzo Pastrovicchio",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14659",
+							"name": "Riccardo Secchi",
+							"role": "writer"
+						}
+					],
+					"returned": 4
+				},
+				"characters": {
+					"available": 1,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119992/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 1
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119992/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/261211",
+							"name": "cover from What If…? Donald Duck Became Thor (2024) #1",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/261212",
+							"name": "story from What If…? Donald Duck Became Thor (2024) #1",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/119992/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 113507,
+				"digitalId": 67981,
+				"title": "GIANT-SIZE THOR (2024) #1",
+				"issueNumber": 1,
+				"variantDescription": "",
+				"description": "A GIANT-SIZE THOR SPECTACULAR - GUEST-STARRING HERCULES! Thor All-Father and Hercules, God of Heroes, had joined forces many times, as fast friends and fierce rivals...but never before like this. For in the farthest reaches of space, the Deific Duo faced the greatest and most terrifying war machine ever created...and it bore the Thunderer's face. This is the story...of the GIANT-SIZE THOR! ALSO: Reprinting Bob Harras and Jackson Guice's THOR #365 - a Thor and Hercules tale told by the only real authority on such things: Hercules himself!",
+				"modified": "2024-10-04T09:58:58-0400",
+				"isbn": "",
+				"upc": "75960620849400111",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 48,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/113507",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/113507/giant-size_thor_2024_1?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/GIANT-SIZE-THOR-1-1/digital-comic/67981?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=67981&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/38958",
+					"name": "GIANT-SIZE THOR (2024 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/115139",
+						"name": "GIANT-SIZE THOR (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120166",
+						"name": "GIANT-SIZE THOR (2024) #1 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-08-21T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-07-22T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-08-08T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-08-08T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 6.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/8/d0/66bb717cb220d",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/8/d0/66bb717cb220d",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/113507/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13523",
+							"name": "Annalise Bissa",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/339",
+							"name": "Bryan Hitch",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12918",
+							"name": "Brian Level",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14265",
+							"name": "Alex Sinclair",
+							"role": "colorist (cover)"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/113507/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009343",
+							"name": "Hercules"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/113507/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/248227",
+							"name": "cover from Giant-Size: TBD H (2024) #1",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/248228",
+							"name": "story from Giant-Size: TBD H (2024) #1",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/113507/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 109660,
+				"digitalId": 67983,
+				"title": "Immortal Thor (2023) #14",
+				"issueNumber": 14,
+				"variantDescription": "",
+				"description": "ALL-FATHER VERSUS SKYFATHER IN A 775th ISSUE CLASH OF TITANS! Thor and Hercules were trapped in a realm of endless night...where Nyx and her children were at their full power. But there was a greater danger caged in this dark realm - Zeus, King of the Greek Gods! And when twin thunders met, could either survive? This is the story of the IMMORTAL THOR...and the second test of three.",
+				"modified": "2024-06-28T10:10:04-0400",
+				"isbn": "",
+				"upc": "75960620664301411",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/109660",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/109660/immortal_thor_2023_14?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-14/digital-comic/67983?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=67983&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120960",
+						"name": "Immortal Thor (2023) #14 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/121407",
+						"name": "Immortal Thor (2023) #14 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-08-14T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-07-15T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-08-07T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-08-07T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/664ccf31c5b27",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/664ccf31c5b27",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109660/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109660/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009343",
+							"name": "Hercules"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109660/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240446",
+							"name": "cover from Immortal Thor (2023) #14",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240447",
+							"name": "story from Immortal Thor (2023) #14",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109660/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 109659,
+				"digitalId": 67847,
+				"title": "Immortal Thor (2023) #13",
+				"issueNumber": 13,
+				"variantDescription": "",
+				"description": "ENTER: HERCULES! The son of Zeus sought Thor out - for Toranos' wheel had turned for the Olympians too, and two Gods together might solve such a mystery. The trail took them to a wasteland of snow and ice...to terror and treachery...and to an old foe of Hercules, at the height of her dread power. New series artist JAN BAZALDUA draws the story of the IMMORTAL THOR...and the Night Mother's vengeance. PLUS: PART 5 OF DEADPOOL/WOLVERINE: WEAPON X-TRACTION!",
+				"modified": "2024-06-07T13:53:21-0400",
+				"isbn": "",
+				"upc": "75960620664301311",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/109659",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/109659/immortal_thor_2023_13?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-13/digital-comic/67847?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=67847&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/118853",
+						"name": "Immortal Thor (2023) #13 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/119673",
+						"name": "Immortal Thor (2023) #13 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120167",
+						"name": "Immortal Thor (2023) #13 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120743",
+						"name": "Immortal Thor (2023) #13 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-07-31T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-07-01T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-07-24T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-07-24T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/66212be9a28b0",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/66212be9a28b0",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109659/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14335",
+							"name": "Jan Bazaldua",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/507",
+							"name": "Matt Hollingsworth",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109659/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009343",
+							"name": "Hercules"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109659/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240444",
+							"name": "cover from Immortal Thor (2023) #13",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240445",
+							"name": "story from Immortal Thor (2023) #13",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109659/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 118646,
+				"digitalId": 67848,
+				"title": "IMMORTAL THOR ANNUAL #1 [IW] (2024) #1",
+				"issueNumber": 1,
+				"variantDescription": "",
+				"description": " \"INFINITY WATCH\" PART THREE! Faced with the menace of Utgard and a prophecy of his own doom, the son of Odin sought out the legendary Power Stone to aid his fight. Only two things were in his way. Firstly, the mighty CHAMPION OF THE UNIVERSE - with strength to match Thor's own - was also questing for the stone. Secondly, the Stone is now inside a person - THE PRINCE OF POWER! PLUS, Derek Landy and Sara Pichelli continue the journey of the Death Stone Bearer and the scar it will leave on the universe!",
+				"modified": "2024-06-07T15:31:16-0400",
+				"isbn": "",
+				"upc": "75960620972900111",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/118646",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/118646/immortal_thor_annual_1_iw_2024_1?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/IMMORTAL-THOR-ANNUAL-1-IW-1/digital-comic/67848?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=67848&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/41610",
+					"name": "IMMORTAL THOR ANNUAL #1 [IW] (2024)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120116",
+						"name": "IMMORTAL THOR ANNUAL #1 [IW] (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120117",
+						"name": "IMMORTAL THOR ANNUAL #1 [IW] (2024) #1 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/120118",
+						"name": "IMMORTAL THOR ANNUAL #1 [IW] (2024) #1 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-07-17T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-06-17T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-07-17T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-07-17T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/7/40/66a7f5a92685e",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/7/40/66a7f5a92685e",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 11,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118646/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/9799",
+							"name": "David Baldeon",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/9408",
+							"name": "Sara Pichelli",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13180",
+							"name": "Federico Blee",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13676",
+							"name": "Mattia Iacono",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+							"name": "Guru Efx",
+							"role": "colorist (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12861",
+							"name": "Derek Landy",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12993",
+							"name": "Vc Travis Lanham",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/11757",
+							"name": "Salvador Larroca",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14531",
+							"name": "Michelle Marchese",
+							"role": "editor"
+						}
+					],
+					"returned": 11
+				},
+				"characters": {
+					"available": 1,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118646/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 1
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118646/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/258516",
+							"name": "cover from Infinity Watch: TBD B (2024) #1",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/258517",
+							"name": "story from Infinity Watch: TBD B (2024) #1",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/118646/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 109658,
+				"digitalId": 67020,
+				"title": "Immortal Thor (2023) #12",
+				"issueNumber": 12,
+				"variantDescription": "",
+				"description": "GODSDEATH! In Andlang, land of spirits, the Utgard-Odin challenged Thor to battle for the rune of his brother, the war god Tyr. For Tyr was changed by strange forces, within and without...and to restore him would come only at equal cost. This is the story of the IMMORTAL THOR...and the Odinson's end.",
+				"modified": "2024-04-30T10:50:36-0400",
+				"isbn": "",
+				"upc": "75960620664301211",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/109658",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/109658/immortal_thor_2023_12?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-12/digital-comic/67020?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=67020&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/116714",
+						"name": "Immortal Thor (2023) #12 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/116715",
+						"name": "Immortal Thor (2023) #12 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/118783",
+						"name": "Immortal Thor (2023) #12 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-06-19T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-05-20T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-06-07T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-06-07T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/7/50/66634dee659e4",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/7/50/66634dee659e4",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109658/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14536",
+							"name": "Valentina Pinti",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/10279",
+							"name": "Matthew Wilson",
+							"role": "colorist"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 1,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109658/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 1
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109658/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240442",
+							"name": "cover from Immortal Thor (2023) #12",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240443",
+							"name": "story from Immortal Thor (2023) #12",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109658/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 112236,
+				"digitalId": 66632,
+				"title": "Spider-Boy (2023) #7",
+				"issueNumber": 7,
+				"variantDescription": "",
+				"description": "It's the slam-bam conclusion to Spider-Boy's first big multi-part adventure! And all of his amazing friends are showing up to help! Guest-starring: CAPTAIN AMERICA, THOR, SQUIRREL GIRL, THE TOY SOLDIER, MILES MORALES: SPIDER-MAN, and PETER PARKER: SPIDER-MAN! And featuring a major turning point in the life of Bailey Briggs! His life (and this comic) will never be the same again! You do NOT want to miss this one, Spidey-B fans!",
+				"modified": "2024-03-20T11:55:35-0400",
+				"isbn": "",
+				"upc": "75960620785500711",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/112236",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/112236/spider-boy_2023_7?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Spider-Boy-7/digital-comic/66632?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=66632&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/38659",
+					"name": "Spider-Boy (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/115661",
+						"name": "Spider-Boy (2023) #7 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/115730",
+						"name": "Spider-Boy (2023) #7 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/116488",
+						"name": "Spider-Boy (2023) #7 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-05-29T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-04-29T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-05-09T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-05-20T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/664b9dcc4a503",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/664b9dcc4a503",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 9,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/112236/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13162",
+							"name": "Erick Arciniega",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+							"name": "Vc Joe Caramagna",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12980",
+							"name": "Vc Cory Petit",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/430",
+							"name": "Edgar Delgado",
+							"role": "colorist (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/208",
+							"name": "Paco Medina",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/918",
+							"name": "Ty Templeton",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/11701",
+							"name": "Elizabeth Pyle",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/72",
+							"name": "Humberto Ramos",
+							"role": "penciler (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12983",
+							"name": "Dan Slott",
+							"role": "writer"
+						}
+					],
+					"returned": 9
+				},
+				"characters": {
+					"available": 5,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/112236/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+							"name": "Captain America"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1016181",
+							"name": "Spider-Man (Miles Morales)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+							"name": "Spider-Man (Peter Parker)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1010860",
+							"name": "Squirrel Girl"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 5
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/112236/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/245645",
+							"name": "cover from Spider-Boy (2023) #7",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/245646",
+							"name": "story from Spider-Boy (2023) #7",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/112236/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 109657,
+				"digitalId": 66615,
+				"title": "Immortal Thor (2023) #11",
+				"issueNumber": 11,
+				"variantDescription": "",
+				"description": "FOLLOWING UP ON THE G.O.D.S. PAGE FROM IMMORTAL THOR #1!  Tyr had vanished, and there were whispers of cosmic forces at work. And so, the children of Odin gathered in their father's name - to search for one of their own. Regal Thor, fierce Angela, brave Balder, swift Hermod, quiet Honir, strong Vidar, cunning Loki, even Laussa the youngest, all were there...and another beside. Another, whose name they feared. This is the story of THE IMMORTAL THOR...and the lost son of Odin.",
+				"modified": "2024-03-20T11:35:08-0400",
+				"isbn": "",
+				"upc": "75960620664301111",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/109657",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/109657/immortal_thor_2023_11?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-11/digital-comic/66615?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=66615&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/116476",
+						"name": "Immortal Thor (2023) #11 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/116477",
+						"name": "Immortal Thor (2023) #11 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/116478",
+						"name": "Immortal Thor (2023) #11 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-05-22T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-04-22T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-05-09T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-05-09T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/90/663e5c3bcf57b",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/90/663e5c3bcf57b",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109657/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/13674",
+							"name": "Espen Grundetjern",
+							"role": "colorist"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/14536",
+							"name": "Valentina Pinti",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 3,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109657/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1017574",
+							"name": "Angela (Aldrif Odinsdottir)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1011456",
+							"name": "Balder"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 3
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109657/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240440",
+							"name": "cover from Immortal Thor (2023) #11",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/240441",
+							"name": "story from Immortal Thor (2023) #11",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109657/events",
+					"items": [],
+					"returned": 0
+				}
+			},
+			{
+				"id": 109009,
+				"digitalId": 66614,
+				"title": "Immortal Thor (2023) #10",
+				"issueNumber": 10,
+				"variantDescription": "",
+				"description": "THOR MUST DIE! The son of Odin faced three of his greatest foes in battle -  with the fog of magic closing around him. Yet even if he won, he lost...for Thor fought not for his life - but for his death. This is the story of THE IMMORTAL THOR...and the Minotaur's final triumph.",
+				"modified": "2024-03-20T11:33:04-0400",
+				"isbn": "",
+				"upc": "75960620664301011",
+				"diamondCode": "",
+				"ean": "",
+				"issn": "",
+				"format": "Comic",
+				"pageCount": 32,
+				"textObjects": [],
+				"resourceURI": "http://gateway.marvel.com/v1/public/comics/109009",
+				"urls": [
+					{
+						"type": "detail",
+						"url": "http://marvel.com/comics/issue/109009/immortal_thor_2023_10?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "purchase",
+						"url": "http://comicstore.marvel.com/Immortal-Thor-10/digital-comic/66614?utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					},
+					{
+						"type": "reader",
+						"url": "http://marvel.com/digitalcomics/view.htm?iid=66614&utm_campaign=apiRef&utm_source=fb45a7f8d53dd974de2c1770e43b73e1"
+					}
+				],
+				"series": {
+					"resourceURI": "http://gateway.marvel.com/v1/public/series/37429",
+					"name": "Immortal Thor (2023 - Present)"
+				},
+				"variants": [
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/115709",
+						"name": "Immortal Thor (2023) #10 (Variant)"
+					},
+					{
+						"resourceURI": "http://gateway.marvel.com/v1/public/comics/116475",
+						"name": "Immortal Thor (2023) #10 (Variant)"
+					}
+				],
+				"collections": [],
+				"collectedIssues": [],
+				"dates": [
+					{
+						"type": "onsaleDate",
+						"date": "2024-05-01T00:00:00-0400"
+					},
+					{
+						"type": "focDate",
+						"date": "2024-04-01T00:00:00-0400"
+					},
+					{
+						"type": "unlimitedDate",
+						"date": "2024-04-17T00:00:00-0400"
+					},
+					{
+						"type": "digitalPurchaseDate",
+						"date": "2024-04-17T00:00:00-0400"
+					}
+				],
+				"prices": [
+					{
+						"type": "printPrice",
+						"price": 4.99
+					}
+				],
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/65d73ab3b52d9",
+					"extension": "jpg"
+				},
+				"images": [
+					{
+						"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/65d73ab3b52d9",
+						"extension": "jpg"
+					}
+				],
+				"creators": {
+					"available": 6,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109009/creators",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+							"name": "Al Ewing",
+							"role": "writer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/1005",
+							"name": "Carlos Magno",
+							"role": "inker"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+							"name": "Wilson Moss",
+							"role": "editor"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+							"name": "Alex Ross",
+							"role": "painter (cover)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+							"name": "Vc Joe Sabino",
+							"role": "letterer"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/creators/10279",
+							"name": "Matthew Wilson",
+							"role": "colorist"
+						}
+					],
+					"returned": 6
+				},
+				"characters": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109009/characters",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1010671",
+							"name": "Enchantress (Amora)"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/characters/1009664",
+							"name": "Thor"
+						}
+					],
+					"returned": 2
+				},
+				"stories": {
+					"available": 2,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109009/stories",
+					"items": [
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/239138",
+							"name": "cover from Thor (2023) #10",
+							"type": "cover"
+						},
+						{
+							"resourceURI": "http://gateway.marvel.com/v1/public/stories/239139",
+							"name": "story from Thor (2023) #10",
+							"type": "interiorStory"
+						}
+					],
+					"returned": 2
+				},
+				"events": {
+					"available": 0,
+					"collectionURI": "http://gateway.marvel.com/v1/public/comics/109009/events",
+					"items": [],
+					"returned": 0
+				}
+			}
+		]
+	}
+}
