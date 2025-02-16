@@ -51,15 +51,13 @@ export namespace CharactersTypes {
 }
 
 export interface CharactersPorts {
-	fetchCharacters(
-		input: CharactersTypes.FetchCharactersPortInput
-	): Promise<CharactersTypes.Character[] | XHRError | undefined>;
+	fetchCharacters(input: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[] | XHRError>;
 	describeCharacter(
 		input: CharactersTypes.DescribeCharacterPortInput
-	): Promise<CharactersTypes.CharacterDetails | XHRError | undefined>;
+	): Promise<CharactersTypes.CharacterDetails | XHRError>;
 	listCharacterComics(
 		input: CharactersTypes.ListCharacterComicsPortInput
-	): Promise<CharactersTypes.CharacterComic[] | XHRError | undefined>;
+	): Promise<CharactersTypes.CharacterComic[] | XHRError>;
 }
 
 export interface CharactersUseCases {

@@ -5,6 +5,7 @@ import {
 	CharactersListComicsInput,
 	CharactersListInput,
 	type Comic,
+	type HttpClientOutput,
 	type InfraOutput,
 } from '../../infra';
 import type { CharactersPorts, CharactersTypes } from '../../types.ts';
@@ -21,46 +22,42 @@ export class OutputHttpAdapter implements CharactersPorts {
 		};
 	}
 
-	private _mapResponseToOutput(response: InfraOutput<Character>): CharactersTypes.Character[] {
-		const { data } = response;
-		const { results } = data;
+	private _mapListCharacterToApplication(response?: InfraOutput<Character>): CharactersTypes.Character[] {
+		const { data } = response || {};
+		const { results } = data || {};
 
-		return results.map(this._mapItemToCharacter.bind(this));
+		return (results || []).map(this._mapItemToCharacter.bind(this));
 	}
 
 	async fetchCharacters({
 		name,
-	}: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[] | XHRError | undefined> {
+	}: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[] | XHRError> {
 		const params: CharactersListInput = { limit: 50 };
 		if (name) {
 			params.name = name;
 		}
 
-		const response: InfraOutput<Character> | XHRError | undefined = await this.httpClient.list(params);
+		const { response, error }: HttpClientOutput<Character> = await this.httpClient.list(params);
 
-		return response && 'data' in response ? this._mapResponseToOutput(response) : response;
+		return error ? error : this._mapListCharacterToApplication(response);
 	}
 
-	private _mapDetailResponseToApplication(item: Character): CharactersTypes.CharacterDetails {
+	private _mapDetailResponseToApplication(item?: Character): CharactersTypes.CharacterDetails {
 		return {
-			$id: item.id,
-			name: item.name,
-			image: [item.thumbnail.path, item.thumbnail.extension].join('.'),
-			description: item.description,
+			$id: item?.id,
+			name: item?.name,
+			image: [item?.thumbnail.path, item?.thumbnail.extension].join('.'),
+			description: item?.description,
 			isFavourite: false,
 		} as CharactersTypes.CharacterDetails;
 	}
 
 	async describeCharacter({
 		id,
-	}: CharactersTypes.DescribeCharacterPortInput): Promise<CharactersTypes.CharacterDetails | XHRError | undefined> {
-		const response: InfraOutput<Character> | XHRError | undefined = await this.httpClient.describe({ id });
+	}: CharactersTypes.DescribeCharacterPortInput): Promise<CharactersTypes.CharacterDetails | XHRError> {
+		const { response, error }: HttpClientOutput<Character> = await this.httpClient.describe({ id });
 
-		return response && 'data' in response && 'results' in response.data
-			? this._mapDetailResponseToApplication(response.data.results[0])
-			: response && 'errorMessage' in response
-				? (response as XHRError)
-				: undefined;
+		return error ? error : this._mapDetailResponseToApplication(response?.data.results[0]);
 	}
 
 	private _mapCharacterComicToApplication(comic: Comic): CharactersTypes.CharacterComic {
@@ -80,18 +77,14 @@ export class OutputHttpAdapter implements CharactersPorts {
 
 	async listCharacterComics({
 		id,
-	}: CharactersTypes.ListCharacterComicsPortInput): Promise<CharactersTypes.CharacterComic[] | XHRError | undefined> {
+	}: CharactersTypes.ListCharacterComicsPortInput): Promise<CharactersTypes.CharacterComic[] | XHRError> {
 		const params: CharactersListComicsInput = {
 			limit: 20,
 			id,
 		};
 
-		const response: InfraOutput<Comic> | XHRError | undefined = await this.httpClient.listComics(params);
+		const { response, error }: HttpClientOutput<Comic> = await this.httpClient.listComics(params);
 
-		return response && 'data' in response && 'results' in response.data
-			? this._mapCharacterComicsToApplication(response.data.results)
-			: response && 'errorCode' in response
-				? (response as XHRError)
-				: response;
+		return error ? error : this._mapCharacterComicsToApplication(response?.data.results || []);
 	}
 }
