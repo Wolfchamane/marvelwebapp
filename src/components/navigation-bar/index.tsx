@@ -1,30 +1,31 @@
 import './styles.sass';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router';
 // @ts-ignore
 import logo from '@/assets/logo.png';
+import { toggleFilterByFavourites } from '../../features/favourites/store';
 import { FavouriteIcon } from '../favourite-icon';
-import { useSelector, useDispatch } from 'react-redux'
 
-export interface NavigationBarProperties {
-	favourites?: number;
-	loading?: boolean;
-}
-
-export function NavigationBar({ favourites }: NavigationBarProperties) {
+export function NavigationBar() {
+	const dispatch = useDispatch();
 	const numOfFavourites: number = useSelector(state => state.favourites.value.length);
+	const filterByFavourites: boolean = useSelector(state => state.favourites.filterByFavourites);
+
+	const onButtonClick = () => dispatch(toggleFilterByFavourites(!filterByFavourites));
 
 	return (
 		<nav className={'navigation-bar'}>
 			<ul className={'navigation-bar__menu'}>
 				<li>
-					<a href={'/'}>
+					<Link to="/">
 						<img src={logo} alt={'Marvel Characters'} width={130} height={52} />
-					</a>
+					</Link>
 				</li>
 				<li className={'navigation-bar__empty'}>&nbsp;</li>
 				<li className={'navigation-bar__favourites'}>
-					<a href={'/src/app/favourites'}>
-						<FavouriteIcon filled={!!favourites} />
-					</a>
+					<button onClick={onButtonClick}>
+						<FavouriteIcon filled={filterByFavourites} />
+					</button>
 					<span className={'navigation-bar__favourites-text'}>{numOfFavourites}</span>
 				</li>
 			</ul>

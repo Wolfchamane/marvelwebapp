@@ -1,50 +1,68 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { CharacterCard, SearchForm } from '../../../../../components';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharactersPage() {
+	const favourites: number[] = useSelector(state => state.favourites.value);
+	const filterByFavourites: boolean = useSelector(state => state.favourites.filterByFavourites);
 	const [useCases /*, setUseCases*/] = useState<CharactersUseCases>(provideCharactersUseCases());
 	const [characters, setCharacters] = useState<CharactersTypes.Character[]>([]);
-	const [isLoading, setIsLoading] = useState<boolean>(true);
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	const [_, setIsLoading] = useState<boolean>(false);
 	const [searchValue, setSearchValue] = useState<string>('');
 
-	const loadCharacters = useCallback(async () => {
-		if (!isLoading || characters.length) {
-			return;
-		}
-
+	const loadCharacters = useCallback(async (): Promise<void> => {
+		setIsLoading(true);
 		const fetchCharactersUseCaseInput: CharactersTypes.FetchCharactersUseCaseInput = {};
 		if (searchValue) {
 			fetchCharactersUseCaseInput.name = searchValue;
 		}
 		await useCases?.fetchCharacters(fetchCharactersUseCaseInput);
-		setCharacters(useCases.characters);
 		setIsLoading(false);
-	}, [isLoading, characters, searchValue]);
+	}, [searchValue, useCases]);
 
 	useEffect(() => {
-		loadCharacters();
-	}, [loadCharacters]);
+		let ignore: boolean = false;
+
+		(async () => {
+			await loadCharacters();
+			if (!ignore) {
+				setCharacters(useCases.characters);
+			}
+		})();
+
+		return () => {
+			ignore = true;
+		};
+	}, [useCases, loadCharacters]);
 
 	const onSearch = async (name: string): Promise<void> => {
-		setIsLoading(true);
-		setCharacters([]);
 		setSearchValue(name);
+		setCharacters([]);
+		setIsLoading(true);
+		await loadCharacters();
+		setCharacters(useCases.characters);
+		setIsLoading(false);
 	};
+
+	const charactersToRender = filterByFavourites
+		? characters.filter(character => favourites.includes(character.$id))
+		: characters;
 
 	return (
 		<div className={'characters-page'}>
-			<SearchForm results={characters.length || 0} onSearch={onSearch} />
+			<SearchForm results={charactersToRender.length} onSearch={onSearch} />
 			<div className={'characters-page__list'}>
-				{characters.map(item => (
+				{charactersToRender.map(item => (
 					<CharacterCard
 						key={`character-${item.$id}`}
 						id={item.$id}
 						name={item.name}
 						image={item.image}
-						isFavourite={item.isFavourite}
+						isFavourite={(favourites || []).includes(item.$id)}
 					/>
 				))}
 			</div>

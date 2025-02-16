@@ -1,44 +1,51 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
+import { addToFavourites, removeFromFavourites } from '../../../../favourites/store';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
-import { useDispatch } from 'react-redux'
-import { addToFavourites, removeFromFavourites, addToFavouritesAction, removeFromFavouritesAction } from "../../../../favourites/store";
 
 export function CharacterDetailsPage() {
+	const favourites: number[] = useSelector(state => state.favourites.value);
 	const dispatch = useDispatch();
 	const { id } = useParams();
 	const [useCases] = useState<CharactersUseCases>(provideCharactersUseCases());
-	const [isLoading, setIsLoading] = useState<boolean>(true);
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	const [_, setIsLoading] = useState<boolean>(true);
 	const [character, setCharacter] = useState<CharactersTypes.CharacterDetails | null>(null);
 	const [comics, setComics] = useState<CharactersTypes.CharacterComic[]>([]);
 
 	const fetchCharacterDetails = useCallback(async (): Promise<void> => {
-		if (!isLoading || character) {
-			return;
-		}
-
+		setIsLoading(true);
 		await useCases.describeCharacter({ id: id || '' });
 		await useCases.listCharacterComics({ id: id || '' });
-		setCharacter(useCases.character);
-		setComics(useCases.comics);
 		setIsLoading(false);
-	}, [id, isLoading, character, comics]);
+	}, [id, useCases]);
 
 	useEffect(() => {
-		fetchCharacterDetails();
-	}, [fetchCharacterDetails]);
+		let ignore: boolean = false;
+		(async () => {
+			await fetchCharacterDetails();
+			if (!ignore) {
+				setCharacter(useCases.character);
+				setComics(useCases.comics);
+			}
+		})();
+		return () => {
+			ignore = true;
+		};
+	}, [useCases, fetchCharacterDetails]);
 
 	const onClick = () => {
 		if (character && character.isFavourite) {
-			dispatch(removeFromFavourites(removeFromFavouritesAction(character.$id)));
+			dispatch(removeFromFavourites(character.$id));
 			setCharacter({ ...character, isFavourite: false });
 		}
 
 		if (character && !character.isFavourite) {
-			dispatch(addToFavourites(addToFavouritesAction(character.$id)));
+			dispatch(addToFavourites(character.$id));
 			setCharacter({ ...character, isFavourite: true });
 		}
 	};
@@ -56,7 +63,11 @@ export function CharacterDetailsPage() {
 				<div className={'character-details__info'}>
 					<div className={'character-details__title'}>
 						<span className={'character-details__name'}>{character?.name}</span>
-						<button onClick={onClick}><FavouriteIcon filled={character?.isFavourite} /></button>
+						<button onClick={onClick}>
+							<FavouriteIcon
+								filled={character?.isFavourite || (favourites || []).includes(character.$id)}
+							/>
+						</button>
 					</div>
 					<p className={'character-details__description'}>{character?.description}</p>
 				</div>
