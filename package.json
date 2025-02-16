@@ -1,8 +1,8 @@
 {
-	"name": "dragonball-api-webapp",
-	"author": "Arturo Martínez Diaz",
-	"version": "0.1.1",
-	"description": "",
+	"name": "@amjs/marvel-webapp",
+	"author": "Arturo Martínez Diaz <arturo.martinez@amartinez.dev>",
+	"version": "0.1.2",
+	"description": "MARVEL WebApp",
 	"type": "module",
 	"homepage": "https://wolfchamane.github.io/marvel-webapp",
 	"private": true,
