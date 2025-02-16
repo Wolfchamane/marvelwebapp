@@ -1,8 +1,10 @@
-import { DefaultXHR } from '../../../../lib/xhr.ts';
-import type { Character, CharactersOutput } from '../../infra';
+import type { XHRError } from '../../../../lib/xhr.ts';
+import { type Character, CharactersHttpClient, type CharactersOutput } from '../../infra';
 import type { CharactersPorts, CharactersTypes } from '../../types.ts';
 
-export class OutputHttpAdapter extends DefaultXHR implements CharactersPorts {
+export class OutputHttpAdapter implements CharactersPorts {
+	constructor(private readonly httpClient: CharactersHttpClient) {}
+
 	private _mapItemToCharacter(item: Character): CharactersTypes.Character {
 		return {
 			$id: item.id,
@@ -19,22 +21,17 @@ export class OutputHttpAdapter extends DefaultXHR implements CharactersPorts {
 		return results.map(this._mapItemToCharacter.bind(this));
 	}
 
-	async fetchCharacters({ name }: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[]> {
+	async fetchCharacters({
+		name,
+	}: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[] | XHRError | undefined> {
 		const params: Record<string, any> = { limit: 50 };
 		if (name) {
 			params.name = name;
 		}
 
-		const response = (await this.fetch('/characters', {
-			method: 'GET',
-			params,
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		})) as CharactersOutput;
+		const response: CharactersOutput | XHRError | undefined = await this.httpClient.list(params);
 
-		return this._mapResponseToOutput(response);
+		return response && 'data' in response ? this._mapResponseToOutput(response) : response;
 	}
 
 	private _mapDetailResponseToApplication(item: Character): CharactersTypes.CharacterDetails {
@@ -49,18 +46,13 @@ export class OutputHttpAdapter extends DefaultXHR implements CharactersPorts {
 
 	async describeCharacter({
 		id,
-	}: CharactersTypes.DescribeCharacterPortInput): Promise<CharactersTypes.CharacterDetails> {
-		const response = (await this.fetch(`/characters/${id}`, {
-			method: 'GET',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		})) as CharactersOutput;
+	}: CharactersTypes.DescribeCharacterPortInput): Promise<CharactersTypes.CharacterDetails | XHRError | undefined> {
+		const response: CharactersOutput | XHRError | undefined = await this.httpClient.describe({ id });
 
-		const { data } = response;
-		const { results } = data;
-
-		return this._mapDetailResponseToApplication(results[0]);
+		return response && 'data' in response && 'results' in response.data
+			? this._mapDetailResponseToApplication(response.data.results[0])
+			: response && 'message' in response
+				? (response as XHRError)
+				: undefined;
 	}
 }

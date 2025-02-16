@@ -13,7 +13,7 @@ export interface XHROptions {
 }
 
 export interface XHR {
-	fetch(url: string, options?: XHROptions): Promise<any>;
+	fetch<T>(url: string, options?: XHROptions): Promise<T | XHRError | undefined>;
 	abort(): void;
 }
 
@@ -28,6 +28,10 @@ export class DefaultXHR implements XHR {
 		let target: string = `https://${import.meta.env.VITE_API_HOSTNAME}`;
 		if (url.startsWith('/') && target.endsWith('/')) {
 			target += url.substring(1);
+		} else if (!url.startsWith('/') && !target.endsWith('/')) {
+			target = [ target, url ].join('/');
+		} else {
+			target += url;
 		}
 
 		const queryParams: Record<string, any> = Object.assign({}, params || {}, {
@@ -89,22 +93,21 @@ export class DefaultXHR implements XHR {
 		});
 	}
 
-	private async _parseResult(): Promise<object | string | undefined> {
-		let result: object | string | undefined = undefined;
-		switch (this.request?.headers?.get('Content-Type')) {
-			case 'application/json':
-				result = (await this.response?.json()) as object;
-				break;
-			case 'text/plain':
-				result = await this.response?.text();
-				break;
+	private async _parseResult<T>(preValue?: XHRError): Promise<T | XHRError | undefined> {
+		if (!preValue) {
+			switch (this.request?.headers?.get('Content-Type')) {
+				case 'application/json':
+					return (await this.response?.json()) as T;
+				case 'text/plain':
+					return (await this.response?.text()) as T;
+			}
 		}
 
-		return result;
+		return preValue;
 	}
 
-	async fetch(url: string, options: XHROptions): Promise<object | string | XHRError | undefined> {
-		let result: XHRError | object | string | undefined;
+	async fetch<T>(url: string, options: XHROptions): Promise<T | XHRError | undefined> {
+		let result: T | XHRError | undefined = undefined;
 
 		try {
 			setTimeout(this.abort.bind(this), this.timeout);
@@ -116,9 +119,7 @@ export class DefaultXHR implements XHR {
 				description: (e as Error).message,
 			} as XHRError;
 		} finally {
-			if (!result) {
-				result = await this._parseResult();
-			}
+			result = await this._parseResult<T>(result);
 		}
 
 		return result;

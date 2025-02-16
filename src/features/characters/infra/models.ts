@@ -29,7 +29,7 @@ export interface Character {
 	urls: Resource[];
 }
 
-export interface CharacterCollection {
+export interface CharactersCollection {
 	count: number;
 	limit: number;
 	offset: number;
@@ -42,7 +42,7 @@ export interface CharactersOutput {
 	attributionText: string;
 	code: number;
 	copyright: string;
-	data: CharacterCollection;
+	data: CharactersCollection;
 	etag: string;
 	status: string;
 }

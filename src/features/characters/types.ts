@@ -1,3 +1,5 @@
+import type { XHRError } from '../../lib/xhr.ts';
+
 export namespace CharactersTypes {
 	export interface CharacterComic {
 		$id: number;
@@ -40,8 +42,12 @@ export namespace CharactersTypes {
 }
 
 export interface CharactersPorts {
-	fetchCharacters(input: CharactersTypes.FetchCharactersPortInput): Promise<CharactersTypes.Character[]>;
-	describeCharacter(input: CharactersTypes.DescribeCharacterPortInput): Promise<CharactersTypes.CharacterDetails>;
+	fetchCharacters(
+		input: CharactersTypes.FetchCharactersPortInput
+	): Promise<CharactersTypes.Character[] | XHRError | undefined>;
+	describeCharacter(
+		input: CharactersTypes.DescribeCharacterPortInput
+	): Promise<CharactersTypes.CharacterDetails | XHRError | undefined>;
 }
 
 export interface CharactersUseCases {
