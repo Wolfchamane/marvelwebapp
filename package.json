@@ -1,7 +1,7 @@
 {
 	"name": "@amjs/marvel-webapp",
 	"author": "Arturo Martínez Diaz <arturo.martinez@amartinez.dev>",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "MARVEL WebApp",
 	"type": "module",
 	"homepage": "https://wolfchamane.github.io/marvel-webapp",
