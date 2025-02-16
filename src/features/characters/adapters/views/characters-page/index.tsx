@@ -1,8 +1,8 @@
+import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
-import './characters.styles.sass';
-import { CharacterCard, SearchForm } from '../../../../components';
-import { provideCharactersUseCases } from '../../graph.ts';
-import type { CharactersTypes, CharactersUseCases } from '../../types.ts';
+import { CharacterCard, SearchForm } from '../../../../../components';
+import { provideCharactersUseCases } from '../../../graph.ts';
+import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharactersPage() {
 	const [useCases /*, setUseCases*/] = useState<CharactersUseCases>(provideCharactersUseCases());

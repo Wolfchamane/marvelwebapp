@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react';
 import './styles.sass';
+import type { ReactNode } from 'react';
 
 export interface CarrouselProperties {
 	children: ReactNode;

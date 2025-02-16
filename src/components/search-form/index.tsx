@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import './styles.sass';
+import { useState } from 'react';
 import { SearchInput } from '../search-input';
 
 export interface SearchFormProperties {

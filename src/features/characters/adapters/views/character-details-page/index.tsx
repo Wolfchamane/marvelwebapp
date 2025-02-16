@@ -1,9 +1,9 @@
+import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import './character-details.styles.sass';
-import { Carrousel, ComicCard, FavouriteIcon } from '../../../../components';
-import { provideCharactersUseCases } from '../../graph.ts';
-import type { CharactersTypes, CharactersUseCases } from '../../types.ts';
+import { Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
+import { provideCharactersUseCases } from '../../../graph.ts';
+import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharacterDetailsPage() {
 	const { id } = useParams();

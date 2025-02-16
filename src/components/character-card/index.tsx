@@ -1,5 +1,5 @@
-import { Link } from 'react-router';
 import './styles.sass';
+import { Link } from 'react-router';
 
 export interface CharacterCardProperties {
 	id: number;
