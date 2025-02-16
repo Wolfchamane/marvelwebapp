@@ -1,15 +1,14 @@
 import './styles.sass';
-import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router';
-// @ts-ignore
 import logo from '@/assets/logo.png';
+import { useAppDispatch, useAppSelector } from '../../app/store';
 import { toggleFilterByFavourites } from '../../features/favourites/store';
 import { FavouriteIcon } from '../favourite-icon';
 
 export function NavigationBar() {
-	const dispatch = useDispatch();
-	const numOfFavourites: number = useSelector(state => state.favourites.value.length);
-	const filterByFavourites: boolean = useSelector(state => state.favourites.filterByFavourites);
+	const dispatch = useAppDispatch();
+	const numOfFavourites: number = useAppSelector(state => state.favourites.value.length);
+	const filterByFavourites: boolean = useAppSelector(state => state.favourites.filterByFavourites);
 
 	const onButtonClick = () => dispatch(toggleFilterByFavourites(!filterByFavourites));
 

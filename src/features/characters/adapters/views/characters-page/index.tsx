@@ -1,13 +1,13 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from '../../../../../app/store';
 import { CharacterCard, SearchForm } from '../../../../../components';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharactersPage() {
-	const favourites: number[] = useSelector(state => state.favourites.value);
-	const filterByFavourites: boolean = useSelector(state => state.favourites.filterByFavourites);
+	const favourites: number[] = useAppSelector(state => state.favourites.value);
+	const filterByFavourites: boolean = useAppSelector(state => state.favourites.filterByFavourites);
 	const [useCases /*, setUseCases*/] = useState<CharactersUseCases>(provideCharactersUseCases());
 	const [characters, setCharacters] = useState<CharactersTypes.Character[]>([]);
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars

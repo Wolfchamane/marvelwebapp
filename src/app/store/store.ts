@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { favouritesReducer } from '../features/favourites/store';
+import { favouritesReducer } from '../../features/favourites/store';
 
 const store = configureStore({
 	reducer: {

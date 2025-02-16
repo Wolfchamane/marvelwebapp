@@ -1,15 +1,15 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { useAppDispatch, useAppSelector } from '../../../../../app/store';
 import { Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
 import { addToFavourites, removeFromFavourites } from '../../../../favourites/store';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharacterDetailsPage() {
-	const favourites: number[] = useSelector(state => state.favourites.value);
-	const dispatch = useDispatch();
+	const favourites: number[] = useAppSelector(state => state.favourites.value);
+	const dispatch = useAppDispatch();
 	const { id } = useParams();
 	const [useCases] = useState<CharactersUseCases>(provideCharactersUseCases());
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
