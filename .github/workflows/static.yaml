@@ -47,6 +47,9 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - name: Setup API KEY
+        run: |
+          echo "VITE_API_KEY=${{ secrets.SECRET_NAME }}" >> .env
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -59,7 +62,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./build
+          path: ./dist
   # Deployment job
   deploy:
     environment:
