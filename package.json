@@ -4,6 +4,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"type": "module",
+	"homepage": "http://wolfchamane.github.io/marvel-webapp",
 	"private": true,
 	"scripts": {
 		"dev": "vite",
