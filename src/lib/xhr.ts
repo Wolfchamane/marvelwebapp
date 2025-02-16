@@ -1,14 +1,14 @@
 export type XHRMethod = 'GET' | 'PUT' | 'POST' | 'DELETE';
 
 export interface XHRError {
-	code: number;
-	description: string;
+	errorCode: number;
+	errorMessage: string;
 }
 
 export interface XHROptions {
 	method: XHRMethod;
-	headers?: Record<string, any>;
-	params?: Record<string, any>;
+	headers?: Record<string, string>;
+	params?: Record<string, string>;
 	body?: object | string;
 }
 
@@ -29,7 +29,7 @@ export class DefaultXHR implements XHR {
 		if (url.startsWith('/') && target.endsWith('/')) {
 			target += url.substring(1);
 		} else if (!url.startsWith('/') && !target.endsWith('/')) {
-			target = [ target, url ].join('/');
+			target = [target, url].join('/');
 		} else {
 			target += url;
 		}
@@ -115,8 +115,8 @@ export class DefaultXHR implements XHR {
 			this.response = await fetch(this.request);
 		} catch (e: unknown) {
 			result = {
-				code: 500,
-				description: (e as Error).message,
+				errorCode: 500,
+				errorMessage: (e as Error).message,
 			} as XHRError;
 		} finally {
 			result = await this._parseResult<T>(result);
