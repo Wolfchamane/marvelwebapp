@@ -4,7 +4,7 @@ Visit it at: https://wolfchamane.github.io/marvelwebapp/
 
 Or at: https://wolfchamane.com/marvelwebapp/
 
-Version: **0.1.6**
+Version: **0.2.0**
 
 On a desktop:
 ![characters](./docs/characters_landing.png)
@@ -25,12 +25,14 @@ Fetches information from https://gateway.marvel.com/ API to create a web applica
 
 ## ToDo's
 
+- [ ] Improve user navigation.
 - [ ] Support user's session storage.
-- [ ] Add unitary & e2e tests.
-- [ ] Extend character's details.
-- [ ] Add landing/exploring page with multiple collections.
 - [ ] Support pagination.
 - [ ] Support advanced filtering.
+- [ ] Add unitary & e2e tests.
+- [ ] Add landing/exploring page with multiple collections.
+- [ ] Add error pages.
+- [ ] Extend character's details.
 
 ## Technology stack
 
@@ -77,8 +79,8 @@ Then open your browser at http://localhost:8080/.
 
 About web application:
 
-> See [LICENSE](LICENSE) file for information about **only** the web application.
+> See [LICENSE](LICENSE) file for information about **only** the web application and its source code.
 
-About API and it's content:
+About the API and it's content:
 
 > [Data provided by Marvel. © 2025 MARVEL](https://marvel.com)
