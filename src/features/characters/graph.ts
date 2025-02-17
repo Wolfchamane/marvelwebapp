@@ -10,7 +10,9 @@ const mockCharactersPorts: CharactersPorts = new MockOutputHttpAdapter();
 let useCasesSingleton: CharactersUseCases;
 
 export const provideCharactersUseCases = (): CharactersUseCases => {
-	useCasesSingleton = useCasesSingleton || new DefaultCharactersUseCases(__IS_PRO__ === 'true' ? characterPorts : mockCharactersPorts);
+	useCasesSingleton =
+		useCasesSingleton ||
+		new DefaultCharactersUseCases(JSON.parse(__IS_PRO__) ? characterPorts : mockCharactersPorts);
 
 	return useCasesSingleton;
 };
