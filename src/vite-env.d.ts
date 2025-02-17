@@ -9,3 +9,5 @@ interface ImportMetaEnv {
 interface ImportMeta {
 	readonly env: ImportMetaEnv;
 }
+
+declare const __IS_PRO__: string;
