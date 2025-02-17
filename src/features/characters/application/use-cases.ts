@@ -13,7 +13,7 @@ export class DefaultCharactersUseCases implements CharactersUseCases {
 	async fetchCharacters(input: CharactersTypes.FetchCharactersUseCaseInput): Promise<void> {
 		const response: CharactersTypes.Character[] | XHRError | undefined = await this.ports.fetchCharacters(input);
 		if (response && 'errorCode' in response) {
-			this.lastError = response.errorMessage;
+			this.lastError = `ERROR: ${response.errorMessage}`;
 		} else if (!response) {
 			this.characters = [];
 		} else {
@@ -28,7 +28,7 @@ export class DefaultCharactersUseCases implements CharactersUseCases {
 		if (response && !('errorCode' in response) && !('errorMessage' in response)) {
 			this.character = response;
 		} else if (response && 'errorCode' in response) {
-			this.lastError = response.errorMessage;
+			this.lastError = `ERROR: ${response.errorMessage}`;
 		} else {
 			this.character = null;
 		}
@@ -39,7 +39,7 @@ export class DefaultCharactersUseCases implements CharactersUseCases {
 			await this.ports.listCharacterComics(input);
 		if (response && 'errorCode' in response) {
 			this.comics = [];
-			this.lastError = response.errorMessage;
+			this.lastError = `ERROR: ${response.errorMessage}`;
 		} else if (!response) {
 			this.comics = [];
 		} else {

@@ -64,6 +64,7 @@ export interface CharactersUseCases {
 	characters: CharactersTypes.Character[];
 	character: Nullable<CharactersTypes.CharacterDetails>;
 	comics: CharactersTypes.CharacterComic[];
+	lastError: Nullable<string>;
 	fetchCharacters(input: CharactersTypes.FetchCharactersUseCaseInput): Promise<void>;
 	describeCharacter(input: CharactersTypes.DescribeCharacterUseCaseInput): Promise<void>;
 	listCharacterComics(input: CharactersTypes.ListCharacterComicsUseCaseInput): Promise<void>;

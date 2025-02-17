@@ -1,0 +1,24 @@
+@use 'sass:map'
+@use 'sass:list'
+@use '@/styles/lib/colors'
+
+$type-color:('info': #4b4bd8, 'success': #40d840, 'warning': #faa400, 'error': #f00)
+$type-background:('info': #aeb4f1, 'success': #4dbd4d, 'warning': #e3b474, 'error': #ea6d6d)
+
+.alert
+  display: block
+  width: calc(100% - 1em)
+  height: auto
+  max-height: calc(50px + 1em)
+  margin: .5em
+  padding: .5em
+  color: colors.color('white')
+  border-width: 1px
+  border-style: solid
+  border-radius: .5em
+  overflow: hidden
+
+  @each $key, $value in $type-color
+    &--#{$key}
+      background-color: map.get($type-background, $key)
+      border-color: map.get($type-color, $key)

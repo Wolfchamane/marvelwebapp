@@ -2,13 +2,14 @@ import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { toggleLoading, useAppDispatch, useAppSelector } from '../../../../../app/store';
-import { Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
+import { Alert, Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
 import { addToFavourites, removeFromFavourites } from '../../../../favourites/store';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharacterDetailsPage() {
 	const favourites: number[] = useAppSelector(state => state.favourites.value);
+	const isLoading: boolean = useAppSelector(state => state.loading.value);
 	const dispatch = useAppDispatch();
 	const { id } = useParams();
 	const [useCases] = useState<CharactersUseCases>(provideCharactersUseCases());
@@ -48,45 +49,51 @@ export function CharacterDetailsPage() {
 		}
 	};
 
-	return character ? (
+	return !isLoading ? (
 		<section className={'character-details'}>
-			<header className={'character-details__resume'}>
-				<img
-					className={'character-details__picture'}
-					src={character?.image || ''}
-					alt={character?.name || ''}
-					width={320}
-					height={320}
-				/>
-				<div className={'character-details__info'}>
-					<div className={'character-details__title'}>
-						<span className={'character-details__name'}>{character?.name}</span>
-						<button onClick={onClick}>
-							<FavouriteIcon
-								filled={character?.isFavourite || (favourites || []).includes(character.$id)}
-							/>
-						</button>
-					</div>
-					<p className={'character-details__description'}>{character?.description}</p>
-				</div>
-			</header>
-			<article className={'character-details__comics'}>
-				<header>
-					<h1 className={'character-details__comics-title'}>Comics</h1>
-				</header>
-				<Carrousel>
-					{comics.map(comic => (
-						<ComicCard
-							key={`comic-${comic.$id}`}
-							image={comic.image}
-							title={comic.title}
-							year={comic.year?.getFullYear()}
+			{useCases.lastError ? (
+				<Alert type={'error'} message={useCases.lastError} />
+			) : (
+				<>
+					<header className={'character-details__resume'}>
+						<img
+							className={'character-details__picture'}
+							src={character?.image || ''}
+							alt={character?.name || ''}
+							width={320}
+							height={320}
 						/>
-					))}
-				</Carrousel>
-			</article>
+						<div className={'character-details__info'}>
+							<div className={'character-details__title'}>
+								<span className={'character-details__name'}>{character?.name}</span>
+								<button onClick={onClick}>
+									<FavouriteIcon
+										filled={character?.isFavourite || (favourites || []).includes(character.$id)}
+									/>
+								</button>
+							</div>
+							<p className={'character-details__description'}>{character?.description}</p>
+						</div>
+					</header>
+					<article className={'character-details__comics'}>
+						<header>
+							<h1 className={'character-details__comics-title'}>Comics</h1>
+						</header>
+						<Carrousel>
+							{comics.map(comic => (
+								<ComicCard
+									key={`comic-${comic.$id}`}
+									image={comic.image}
+									title={comic.title}
+									year={comic.year?.getFullYear()}
+								/>
+							))}
+						</Carrousel>
+					</article>
+				</>
+			)}
 		</section>
 	) : (
-		<p>Cargando ...</p>
+		<p>CARGANDO ...</p>
 	);
 }

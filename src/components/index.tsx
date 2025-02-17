@@ -1,3 +1,4 @@
+export * from './alert';
 export * from './carrousel';
 export * from './character-card';
 export * from './comic-card';
