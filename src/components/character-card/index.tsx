@@ -10,7 +10,7 @@ export interface CharacterCardProperties {
 
 export function CharacterCard({ id, name, image, isFavourite }: CharacterCardProperties) {
 	return (
-		<Link className={'character-card'} to={`/character/${id}`}>
+		<Link className={'character-card'} to={`${import.meta.env.VITE_BASE_PATH}character/${id}`}>
 			<div className={'character-card__image'}>
 				<img src={image} alt={name} height={189.97} width={172.5} />
 			</div>

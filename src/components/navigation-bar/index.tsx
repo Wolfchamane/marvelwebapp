@@ -24,7 +24,7 @@ export function NavigationBar() {
 		<nav className={'navigation-bar'}>
 			<ul className={'navigation-bar__menu'}>
 				<li>
-					<Link to="/">
+					<Link to={import.meta.env.VITE_BASE_PATH}>
 						<img src={logo} alt={'Marvel Characters'} width={130} height={52} />
 					</Link>
 				</li>
