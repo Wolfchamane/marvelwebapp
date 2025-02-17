@@ -1,7 +1,7 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { useAppDispatch, useAppSelector } from '../../../../../app/store';
+import { toggleLoading, useAppDispatch, useAppSelector } from '../../../../../app/store';
 import { Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
 import { addToFavourites, removeFromFavourites } from '../../../../favourites/store';
 import { provideCharactersUseCases } from '../../../graph.ts';
@@ -12,17 +12,15 @@ export function CharacterDetailsPage() {
 	const dispatch = useAppDispatch();
 	const { id } = useParams();
 	const [useCases] = useState<CharactersUseCases>(provideCharactersUseCases());
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const [_, setIsLoading] = useState<boolean>(true);
 	const [character, setCharacter] = useState<CharactersTypes.CharacterDetails | null>(null);
 	const [comics, setComics] = useState<CharactersTypes.CharacterComic[]>([]);
 
 	const fetchCharacterDetails = useCallback(async (): Promise<void> => {
-		setIsLoading(true);
+		dispatch(toggleLoading(true));
 		await useCases.describeCharacter({ id: id || '' });
 		await useCases.listCharacterComics({ id: id || '' });
-		setIsLoading(false);
-	}, [id, useCases]);
+		dispatch(toggleLoading(false));
+	}, [dispatch, id, useCases]);
 
 	useEffect(() => {
 		let ignore: boolean = false;

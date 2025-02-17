@@ -1,28 +1,27 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
-import { useAppSelector } from '../../../../../app/store';
+import { toggleLoading, useAppDispatch, useAppSelector } from '../../../../../app/store';
 import { CharacterCard, GridLayout, SearchForm } from '../../../../../components';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharactersPage() {
+	const dispatch = useAppDispatch();
 	const favourites: number[] = useAppSelector(state => state.favourites.value);
 	const filterByFavourites: boolean = useAppSelector(state => state.favourites.filterByFavourites);
 	const [useCases /*, setUseCases*/] = useState<CharactersUseCases>(provideCharactersUseCases());
 	const [characters, setCharacters] = useState<CharactersTypes.Character[]>([]);
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const [_, setIsLoading] = useState<boolean>(false);
 	const [searchValue, setSearchValue] = useState<string>('');
 
 	const loadCharacters = useCallback(async (): Promise<void> => {
-		setIsLoading(true);
+		dispatch(toggleLoading(true));
 		const fetchCharactersUseCaseInput: CharactersTypes.FetchCharactersUseCaseInput = {};
 		if (searchValue) {
 			fetchCharactersUseCaseInput.name = searchValue;
 		}
 		await useCases?.fetchCharacters(fetchCharactersUseCaseInput);
-		setIsLoading(false);
-	}, [searchValue, useCases]);
+		dispatch(toggleLoading(false));
+	}, [dispatch, searchValue, useCases]);
 
 	useEffect(() => {
 		let ignore: boolean = false;
@@ -42,10 +41,10 @@ export function CharactersPage() {
 	const onSearch = async (name: string): Promise<void> => {
 		setSearchValue(name);
 		setCharacters([]);
-		setIsLoading(true);
+		dispatch(toggleLoading(true));
 		await loadCharacters();
 		setCharacters(useCases.characters);
-		setIsLoading(false);
+		dispatch(toggleLoading(false));
 	};
 
 	const charactersToRender = filterByFavourites

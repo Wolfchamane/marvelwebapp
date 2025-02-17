@@ -1,7 +1,16 @@
 @use '@/styles/lib/colors'
 
+@keyframes gradient
+  0%
+    background-position: 0 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0 50%
+
 .navigation-bar
   display: block
+  position: relative
   width: 100%
   background-color: colors.color('black')
 
@@ -30,7 +39,16 @@
 
   &__loader
     display: block
+    position: absolute
+    left: 0
+    bottom: 0
     width: 100%
-    height: 1em
-    background: colors.color('primary')
+    height: .5em
+    background: linear-gradient(90deg, #e37979, #e66666, #ea4d4d, colors.color('primary'))
     overflow: hidden
+    opacity: 0
+    transition: opacity .4s ease-in-out
+
+    &--animate
+      opacity: 1
+      animation: gradient 4s ease infinite
