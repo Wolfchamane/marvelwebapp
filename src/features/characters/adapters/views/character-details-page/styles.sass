@@ -1,6 +1,12 @@
 @use '@/styles/lib/colors'
 
 .character-details
+  display: block
+  width: 100%
+  height: 100%
+  overflow: hidden
+  overflow-y: auto
+
   &__resume
     display: flex
     align-items: center
@@ -72,6 +78,7 @@
 
   &__comics
     margin: 0 10em
+    padding-bottom: .5em
 
     &-title
       text-transform: uppercase
