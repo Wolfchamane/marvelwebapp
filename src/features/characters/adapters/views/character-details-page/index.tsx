@@ -51,9 +51,9 @@ export function CharacterDetailsPage() {
 
 	return !isLoading ? (
 		<section className={'character-details'}>
-			{useCases.lastError ? (
-				<Alert type={'error'} message={useCases.lastError} />
-			) : (
+			{useCases.lastError ? <Alert type={'error'} message={useCases.lastError} /> : null}
+			{!character ? <Alert type={'error'} message={'ERROR: Algo no ha ido bien.'} /> : null}
+			{character ? (
 				<>
 					<header className={'character-details__resume'}>
 						<img
@@ -91,7 +91,7 @@ export function CharacterDetailsPage() {
 						</Carrousel>
 					</article>
 				</>
-			)}
+			) : null}
 		</section>
 	) : (
 		<p>CARGANDO ...</p>
