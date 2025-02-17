@@ -1,7 +1,7 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
 import { useAppSelector } from '../../../../../app/store';
-import { CharacterCard, SearchForm, GridLayout } from '../../../../../components';
+import { CharacterCard, GridLayout, SearchForm } from '../../../../../components';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
@@ -55,17 +55,19 @@ export function CharactersPage() {
 	return (
 		<div className={'characters-page'}>
 			<SearchForm results={charactersToRender.length} onSearch={onSearch} />
-			<GridLayout>
-				{charactersToRender.map(item => (
-					<CharacterCard
-						key={`character-${item.$id}`}
-						id={item.$id}
-						name={item.name}
-						image={item.image}
-						isFavourite={(favourites || []).includes(item.$id)}
-					/>
-				))}
-			</GridLayout>
+			<div className={'characters-page__list'}>
+				<GridLayout>
+					{charactersToRender.map(item => (
+						<CharacterCard
+							key={`character-${item.$id}`}
+							id={item.$id}
+							name={item.name}
+							image={item.image}
+							isFavourite={(favourites || []).includes(item.$id)}
+						/>
+					))}
+				</GridLayout>
+			</div>
 		</div>
 	);
 }
