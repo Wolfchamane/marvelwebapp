@@ -6,7 +6,11 @@ Or at: https://wolfchamane.com/marvelwebapp/
 
 Version: **0.1.6**
 
+On a desktop:
 ![characters](./docs/characters_landing.png)
+
+On a mobile:
+![iphone](./docs/iPhone.png)
 
 > [!NOTE]
 > This application was part of a job interview process.
@@ -14,6 +18,7 @@ Version: **0.1.6**
 ## Features
 
 Fetches information from https://gateway.marvel.com/ API to create a web application where user can:
+
 - List over 50 characters.
 - Get detailed information about any of them.
 - Mark his/her favourites.
@@ -71,9 +76,9 @@ Then open your browser at http://localhost:8080/.
 ## LICENSE
 
 About web application:
+
 > See [LICENSE](LICENSE) file for information about **only** the web application.
 
 About API and it's content:
+
 > [Data provided by Marvel. © 2025 MARVEL](https://marvel.com)
-
-
