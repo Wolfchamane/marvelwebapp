@@ -1,7 +1,7 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
 import { useAppSelector } from '../../../../../app/store';
-import { CharacterCard, SearchForm } from '../../../../../components';
+import { CharacterCard, SearchForm, GridLayout } from '../../../../../components';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
@@ -55,7 +55,7 @@ export function CharactersPage() {
 	return (
 		<div className={'characters-page'}>
 			<SearchForm results={charactersToRender.length} onSearch={onSearch} />
-			<div className={'characters-page__list'}>
+			<GridLayout>
 				{charactersToRender.map(item => (
 					<CharacterCard
 						key={`character-${item.$id}`}
@@ -65,7 +65,7 @@ export function CharactersPage() {
 						isFavourite={(favourites || []).includes(item.$id)}
 					/>
 				))}
-			</div>
+			</GridLayout>
 		</div>
 	);
 }

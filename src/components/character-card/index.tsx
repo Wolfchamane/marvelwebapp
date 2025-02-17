@@ -13,9 +13,9 @@ export function CharacterCard({ id, name, image, isFavourite }: CharacterCardPro
 		<Link className={'character-card'} to={`/character/${id}`}>
 			<div className={'character-card__image'}>
 				<img src={image} alt={name} height={189.97} width={172.5} />
-				<span className={'character-card__ribbon'}></span>
 			</div>
 			<div className={'character-card__name'}>
+				<span className={'character-card__ribbon'}></span>
 				<span className={'character-card__name-text'}>{name}</span>
 				<div
 					className={['character-card__heart', isFavourite ? 'character-card__heart--filled' : '']
