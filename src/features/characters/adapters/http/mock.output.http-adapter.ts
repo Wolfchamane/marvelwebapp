@@ -49,7 +49,7 @@ export class MockOutputHttpAdapter implements CharactersPorts {
 			$id: comic.id,
 			title: comic.title,
 			year: onSaleDate ? new Date(onSaleDate.date) : null,
-			image: [comic.thumbnail.path, comic.thumbnail.extension].join('.'),
+			image: this._buildThumbnailImage(comic.thumbnail),
 		};
 	}
 
