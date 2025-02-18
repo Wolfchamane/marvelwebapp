@@ -1,19 +1,12 @@
 # MARVEL WebApp - Arturo Martínez Díaz
 
-Visit it at: https://wolfchamane.github.io/marvelwebapp/
-
-Or at: https://wolfchamane.com/marvelwebapp/
-
-Version: **0.2.1**
-
-On a desktop:
-![characters](./docs/characters_landing.png)
-
-On a mobile:
-![iphone](./docs/iPhone.png){width="50%"}
-
 > [!NOTE]
 > This application was part of a job interview process.
+
+- Website: https://wolfchamane.com/marvelwebapp/
+- Version: **0.2.1**
+
+![characters](./docs/characters_landing.png)
 
 ## Features
 
