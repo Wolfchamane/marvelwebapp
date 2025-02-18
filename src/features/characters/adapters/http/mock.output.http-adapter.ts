@@ -2,6 +2,7 @@
 import characterThor from '@/../api-spec/mocks/character_thor.json';
 import characterThorComics from '@/../api-spec/mocks/character_thor_comics.json';
 import charactersJson from '@/../api-spec/mocks/characters.json';
+import { isPro } from '@/lib/is-pro';
 import type { XHRError } from '@/lib/xhr.ts';
 import type { Character, Comic, InfraOutput, Thumbnail } from '../../infra';
 import type { CharactersPorts, CharactersTypes } from '../../types.ts';
@@ -10,7 +11,9 @@ export class MockOutputHttpAdapter implements CharactersPorts {
 	constructor() {}
 
 	private _buildThumbnailImage({ path, extension }: Thumbnail): string {
-		return [path, extension].join('.').replace(/^http/g, 'https');
+		const target: string = [path, extension].join('.');
+
+		return isPro ? target.replace(/^http/g, 'https') : target;
 	}
 
 	private _mapItemToCharacter(item: Character): CharactersTypes.Character {
@@ -33,7 +36,7 @@ export class MockOutputHttpAdapter implements CharactersPorts {
 		return {
 			$id: item.id,
 			name: item.name,
-			image: [item.thumbnail.path, item.thumbnail.extension].join('.'),
+			image: item?.thumbnail ? this._buildThumbnailImage(item.thumbnail) : '',
 			description: item.description,
 			isFavourite: false,
 		} as CharactersTypes.CharacterDetails;
