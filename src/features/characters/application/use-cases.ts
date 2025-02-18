@@ -1,5 +1,5 @@
-import { Nullable } from '../../../lib/nullable.ts';
-import { XHRError } from '../../../lib/xhr.ts';
+import type { Nullable } from '@/lib/nullable.ts';
+import type { XHRError } from '@/lib/xhr.ts';
 import type { CharactersPorts, CharactersTypes, CharactersUseCases } from '../types';
 
 export class DefaultCharactersUseCases implements CharactersUseCases {

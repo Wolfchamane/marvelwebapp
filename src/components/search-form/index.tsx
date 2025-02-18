@@ -1,6 +1,6 @@
 import './styles.sass';
 import { useState } from 'react';
-import { SearchInput } from '../search-input';
+import { SearchInput } from '@/components';
 
 export interface SearchFormProperties {
 	results: number;

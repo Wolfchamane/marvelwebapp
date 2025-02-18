@@ -1,9 +1,9 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { toggleLoading, useAppDispatch, useAppSelector } from '../../../../../app/store';
-import { Alert, Carrousel, ComicCard, FavouriteIcon } from '../../../../../components';
-import { addToFavourites, removeFromFavourites } from '../../../../favourites/store';
+import { toggleLoading, useAppDispatch, useAppSelector } from '@/app/store';
+import { Alert, Carrousel, ComicCard, FavouriteIcon } from '@/components';
+import { addToFavourites, removeFromFavourites } from '@/features';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 

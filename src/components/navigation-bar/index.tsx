@@ -1,10 +1,10 @@
 import './styles.sass';
 import { useCallback } from 'react';
 import { Link } from 'react-router';
+import { useAppDispatch, useAppSelector } from '@/app/store';
 import logo from '@/assets/logo.png';
-import { useAppDispatch, useAppSelector } from '../../app/store';
-import { toggleFilterByFavourites } from '../../features/favourites/store';
-import { FavouriteIcon } from '../favourite-icon';
+import { FavouriteIcon } from '@/components';
+import { toggleFilterByFavourites } from '@/features';
 
 export function NavigationBar() {
 	const dispatch = useAppDispatch();

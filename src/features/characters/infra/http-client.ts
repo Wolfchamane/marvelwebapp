@@ -1,4 +1,4 @@
-import { DefaultXHR, type XHRError } from '../../../lib/xhr.ts';
+import { DefaultXHR, type XHRError } from '@/lib/xhr.ts';
 import type { Character, Comic, InfraOutput } from './models.ts';
 
 export interface CharactersListInput {

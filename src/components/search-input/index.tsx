@@ -1,5 +1,5 @@
 import './styles.sass';
-import { SearchIcon } from '../search-icon';
+import { SearchIcon } from '@/components';
 
 export interface SearchInputProperties {
 	onChange(value: string): void;

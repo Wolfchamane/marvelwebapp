@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { charactersReducer } from '../../features/characters';
-import { favouritesReducer } from '../../features/favourites/store';
+import { charactersReducer, favouritesReducer } from '@/features';
 import { loadingReducer } from './loading';
 
 export const store = configureStore({

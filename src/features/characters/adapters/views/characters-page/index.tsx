@@ -1,7 +1,7 @@
 import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
-import { toggleLoading, useAppDispatch, useAppSelector } from '../../../../../app/store';
-import { Alert, CharacterCard, GridLayout, SearchForm } from '../../../../../components';
+import { toggleLoading, useAppDispatch, useAppSelector } from '@/app/store';
+import { Alert, CharacterCard, GridLayout, SearchForm } from '@/components';
 import { provideCharactersUseCases } from '../../../graph.ts';
 import { storeCharacters } from '../../../store';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';

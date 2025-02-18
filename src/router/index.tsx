@@ -1,11 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router';
-import { NavigationBar } from '../components';
-import {
-	CHARACTERS_ROUTE_PATH,
-	CHARACTER_DETAILS_PATH,
-	CharacterDetailsPage,
-	CharactersPage,
-} from '../features/characters';
+import { NavigationBar } from '@/components';
+import { CHARACTERS_ROUTE_PATH, CHARACTER_DETAILS_PATH, CharacterDetailsPage, CharactersPage } from '@/features';
 
 export function AppRouter() {
 	return (
