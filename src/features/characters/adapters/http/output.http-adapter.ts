@@ -1,4 +1,4 @@
-import type { XHRError } from '../../../../lib/xhr.ts';
+import type { XHRError } from '@/lib/xhr.ts';
 import {
 	type Character,
 	CharactersHttpClient,
@@ -7,17 +7,22 @@ import {
 	type Comic,
 	type HttpClientOutput,
 	type InfraOutput,
+	type Thumbnail,
 } from '../../infra';
 import type { CharactersPorts, CharactersTypes } from '../../types.ts';
 
 export class OutputHttpAdapter implements CharactersPorts {
 	constructor(private readonly httpClient: CharactersHttpClient) {}
 
+	private _buildThumbnailImage({ path, extension }: Thumbnail): string {
+		return [path, extension].join('.').replace(/^http/g, 'https');
+	}
+
 	private _mapItemToCharacter(item: Character): CharactersTypes.Character {
 		return {
 			$id: item.id,
 			name: item.name,
-			image: [item.thumbnail.path, item.thumbnail.extension].join('.'),
+			image: this._buildThumbnailImage(item.thumbnail),
 			isFavourite: false,
 		};
 	}

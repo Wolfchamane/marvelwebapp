@@ -1,19 +1,23 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import characterThor from '../../../../../api-spec/mocks/character_thor.json';
-import characterThorComics from '../../../../../api-spec/mocks/character_thor_comics.json';
-import charactersJson from '../../../../../api-spec/mocks/characters.json';
-import type { XHRError } from '../../../../lib/xhr.ts';
-import { type Character, type Comic, type InfraOutput } from '../../infra';
-import { CharactersPorts, CharactersTypes } from '../../types.ts';
+import characterThor from '@/../api-spec/mocks/character_thor.json';
+import characterThorComics from '@/../api-spec/mocks/character_thor_comics.json';
+import charactersJson from '@/../api-spec/mocks/characters.json';
+import type { XHRError } from '@/lib/xhr.ts';
+import type { Character, Comic, InfraOutput, Thumbnail } from '../../infra';
+import type { CharactersPorts, CharactersTypes } from '../../types.ts';
 
 export class MockOutputHttpAdapter implements CharactersPorts {
 	constructor() {}
+
+	private _buildThumbnailImage({ path, extension }: Thumbnail): string {
+		return [path, extension].join('.').replace(/^http/g, 'https');
+	}
 
 	private _mapItemToCharacter(item: Character): CharactersTypes.Character {
 		return {
 			$id: item.id,
 			name: item.name,
-			image: [item.thumbnail.path, item.thumbnail.extension].join('.'),
+			image: this._buildThumbnailImage(item.thumbnail),
 			isFavourite: false,
 		};
 	}
