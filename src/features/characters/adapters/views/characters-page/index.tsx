@@ -3,15 +3,16 @@ import { useCallback, useEffect, useState } from 'react';
 import { toggleLoading, useAppDispatch, useAppSelector } from '../../../../../app/store';
 import { Alert, CharacterCard, GridLayout, SearchForm } from '../../../../../components';
 import { provideCharactersUseCases } from '../../../graph.ts';
+import { storeCharacters } from '../../../store';
 import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
 
 export function CharactersPage() {
 	const dispatch = useAppDispatch();
 	const isLoading: boolean = useAppSelector(state => state.loading.value);
 	const favourites: number[] = useAppSelector(state => state.favourites.value);
+	const characters: CharactersTypes.Character[] = useAppSelector(state => state.characters.items);
 	const filterByFavourites: boolean = useAppSelector(state => state.favourites.filterByFavourites);
 	const [useCases /*, setUseCases*/] = useState<CharactersUseCases>(provideCharactersUseCases());
-	const [characters, setCharacters] = useState<CharactersTypes.Character[]>([]);
 	const [searchValue, setSearchValue] = useState<string>('');
 
 	const loadCharacters = useCallback(async (): Promise<void> => {
@@ -25,27 +26,24 @@ export function CharactersPage() {
 	}, [dispatch, searchValue, useCases]);
 
 	useEffect(() => {
-		let ignore: boolean = false;
+		let ignore: boolean = characters.length !== 0;
 
 		(async () => {
-			await loadCharacters();
 			if (!ignore) {
-				setCharacters(useCases.characters);
+				await loadCharacters();
+				dispatch(storeCharacters(useCases.characters));
 			}
 		})();
 
 		return () => {
 			ignore = true;
 		};
-	}, [useCases, loadCharacters]);
+	}, [characters, useCases, loadCharacters, dispatch]);
 
 	const onSearch = async (name: string): Promise<void> => {
 		setSearchValue(name);
-		setCharacters([]);
+		dispatch(storeCharacters([]));
 		dispatch(toggleLoading(true));
-		await loadCharacters();
-		setCharacters(useCases.characters);
-		dispatch(toggleLoading(false));
 	};
 
 	const charactersToRender = filterByFavourites
