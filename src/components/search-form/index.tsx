@@ -1,5 +1,5 @@
 import './styles.sass';
-import { useState } from 'react';
+import { type FormEvent, useState } from 'react';
 import { SearchInput } from '@/components';
 
 export interface SearchFormProperties {
@@ -14,7 +14,7 @@ export function SearchForm({ results, onSearch }: SearchFormProperties) {
 		setSearch(value);
 	};
 
-	const onSubmit = async (e: any): Promise<void> => {
+	const onSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
 		if ('stopPropagation' in e) {
 			e.stopPropagation();
 			e.preventDefault();

@@ -1,6 +1,4 @@
-// @ts-ignore
 import heartEmpty from '@/assets/heart_empty.png';
-// @ts-ignore
 import heartFilled from '@/assets/heart_filled.png';
 
 export interface FavouriteIconProperties {

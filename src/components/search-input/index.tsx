@@ -1,4 +1,5 @@
 import './styles.sass';
+import type { ChangeEvent } from 'react';
 import { SearchIcon } from '@/components';
 
 export interface SearchInputProperties {
@@ -13,7 +14,7 @@ export function SearchInput({ onChange }: SearchInputProperties) {
 				className={'form-input'}
 				type={'text'}
 				placeholder={'Search a character ...'}
-				onChange={(e: any) => onChange(e.target.value)}
+				onChange={(e: ChangeEvent<HTMLInputElement>) => onChange(e.target.value)}
 			/>
 		</div>
 	);
