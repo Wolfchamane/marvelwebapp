@@ -100,6 +100,7 @@ jobs:
                   protocol: ftp
                   local-dir: ./dist/
                   server-dir: wolfchamane.com/marvelwebapp/
+                  dangerous-clean-slate: true
     # Deployment job for GitHub Pages
     # deploy_pages:
     #     environment:
