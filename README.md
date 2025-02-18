@@ -4,13 +4,13 @@ Visit it at: https://wolfchamane.github.io/marvelwebapp/
 
 Or at: https://wolfchamane.com/marvelwebapp/
 
-Version: **0.2.0**
+Version: **0.2.1**
 
 On a desktop:
 ![characters](./docs/characters_landing.png)
 
 On a mobile:
-![iphone](./docs/iPhone.png)
+![iphone](./docs/iPhone.png){width="50%"}
 
 > [!NOTE]
 > This application was part of a job interview process.
