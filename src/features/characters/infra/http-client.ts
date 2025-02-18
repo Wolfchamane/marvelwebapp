@@ -1,5 +1,5 @@
-import { DefaultXHR, type XHRError } from '@/lib/xhr.ts';
-import type { Character, Comic, InfraOutput } from './models.ts';
+import { DefaultXHR, type XHRError } from '@/lib/xhr';
+import type { Character, Comic, InfraOutput } from './models';
 
 export interface CharactersListInput {
 	limit?: number;

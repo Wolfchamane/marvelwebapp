@@ -2,9 +2,9 @@ import './styles.sass';
 import { useCallback, useEffect, useState } from 'react';
 import { toggleLoading, useAppDispatch, useAppSelector } from '@/app/store';
 import { Alert, CharacterCard, GridLayout, SearchForm } from '@/components';
-import { provideCharactersUseCases } from '../../../graph.ts';
+import { provideCharactersUseCases } from '../../../graph';
 import { storeCharacters } from '../../../store';
-import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
+import type { CharactersTypes, CharactersUseCases } from '../../../types';
 
 export function CharactersPage() {
 	const dispatch = useAppDispatch();

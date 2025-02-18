@@ -1,4 +1,4 @@
-import { favouritesSlice } from './slice.ts';
+import { favouritesSlice } from './slice';
 
 export function addToFavourites(id: number) {
 	return favouritesSlice.actions.addToFavourites(id);

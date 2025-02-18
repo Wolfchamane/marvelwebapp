@@ -1,9 +1,9 @@
 import { isPro } from '@/lib/is-pro';
-import { MockOutputHttpAdapter } from './adapters/http/mock.output.http-adapter.ts';
-import { OutputHttpAdapter } from './adapters/http/output.http-adapter.ts';
-import { DefaultCharactersUseCases } from './application/use-cases.ts';
+import { MockOutputHttpAdapter } from './adapters/http/mock.output.http-adapter';
+import { OutputHttpAdapter } from './adapters/http/output.http-adapter';
+import { DefaultCharactersUseCases } from './application/use-cases';
 import { type CharactersHttpClient, DefaultCharactersHttpClient } from './infra';
-import type { CharactersPorts, CharactersUseCases } from './types.ts';
+import type { CharactersPorts, CharactersUseCases } from './types';
 
 const httpClient: CharactersHttpClient = new DefaultCharactersHttpClient();
 const characterPorts: CharactersPorts = new OutputHttpAdapter(httpClient);

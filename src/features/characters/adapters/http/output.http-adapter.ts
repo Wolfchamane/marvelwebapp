@@ -1,5 +1,5 @@
 import { isPro } from '@/lib/is-pro';
-import type { XHRError } from '@/lib/xhr.ts';
+import type { XHRError } from '@/lib/xhr';
 import {
 	type Character,
 	CharactersHttpClient,
@@ -10,7 +10,7 @@ import {
 	type InfraOutput,
 	type Thumbnail,
 } from '../../infra';
-import type { CharactersPorts, CharactersTypes } from '../../types.ts';
+import type { CharactersPorts, CharactersTypes } from '../../types';
 
 export class OutputHttpAdapter implements CharactersPorts {
 	constructor(private readonly httpClient: CharactersHttpClient) {}

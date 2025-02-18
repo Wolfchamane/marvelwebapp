@@ -1,5 +1,5 @@
-import type { Nullable } from '@/lib/nullable.ts';
-import type { XHRError } from '@/lib/xhr.ts';
+import type { Nullable } from '@/lib/nullable';
+import type { XHRError } from '@/lib/xhr';
 
 // eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace CharactersTypes {

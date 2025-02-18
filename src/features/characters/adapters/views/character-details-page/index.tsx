@@ -4,8 +4,8 @@ import { useParams } from 'react-router';
 import { toggleLoading, useAppDispatch, useAppSelector } from '@/app/store';
 import { Alert, Carrousel, ComicCard, FavouriteIcon } from '@/components';
 import { addToFavourites, removeFromFavourites } from '@/features';
-import { provideCharactersUseCases } from '../../../graph.ts';
-import type { CharactersTypes, CharactersUseCases } from '../../../types.ts';
+import { provideCharactersUseCases } from '../../../graph';
+import type { CharactersTypes, CharactersUseCases } from '../../../types';
 
 export function CharacterDetailsPage() {
 	const favourites: number[] = useAppSelector(state => state.favourites.value);

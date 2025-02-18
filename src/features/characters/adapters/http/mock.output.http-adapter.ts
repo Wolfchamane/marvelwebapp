@@ -3,9 +3,9 @@ import characterThor from '@/../api-spec/mocks/character_thor.json';
 import characterThorComics from '@/../api-spec/mocks/character_thor_comics.json';
 import charactersJson from '@/../api-spec/mocks/characters.json';
 import { isPro } from '@/lib/is-pro';
-import type { XHRError } from '@/lib/xhr.ts';
+import type { XHRError } from '@/lib/xhr';
 import type { Character, Comic, InfraOutput, Thumbnail } from '../../infra';
-import type { CharactersPorts, CharactersTypes } from '../../types.ts';
+import type { CharactersPorts, CharactersTypes } from '../../types';
 
 export class MockOutputHttpAdapter implements CharactersPorts {
 	constructor() {}
