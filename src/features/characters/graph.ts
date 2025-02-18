@@ -1,3 +1,4 @@
+import { isPro } from '@/lib/is-pro';
 import { MockOutputHttpAdapter } from './adapters/http/mock.output.http-adapter.ts';
 import { OutputHttpAdapter } from './adapters/http/output.http-adapter.ts';
 import { DefaultCharactersUseCases } from './application/use-cases.ts';
@@ -11,8 +12,7 @@ let useCasesSingleton: CharactersUseCases;
 
 export const provideCharactersUseCases = (): CharactersUseCases => {
 	useCasesSingleton =
-		useCasesSingleton ||
-		new DefaultCharactersUseCases(JSON.parse(__IS_PRO__) ? characterPorts : mockCharactersPorts);
+		useCasesSingleton || new DefaultCharactersUseCases(isPro ? characterPorts : mockCharactersPorts);
 
 	return useCasesSingleton;
 };
