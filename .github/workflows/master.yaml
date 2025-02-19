@@ -51,6 +51,8 @@ jobs:
               run: ${{ steps.detect-package-manager.outputs.runner }} npm run format
             - name: Check linting rules
               run: ${{ steps.detect-package-manager.outputs.runner }} npm run lint
+            - name: Check source code coverage
+              run: ${{ steps.detect-package-manager.outputs.runner }} npm run test:coverage
     build_and_deploy:
         runs-on: ubuntu-latest
         needs: lint
