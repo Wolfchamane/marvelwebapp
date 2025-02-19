@@ -1,15 +1,22 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { charactersReducer, favouritesReducer } from '@/features';
 import { loadingReducer } from './loading';
 
-export const store = configureStore({
-	reducer: {
-		loading: loadingReducer,
-		favourites: favouritesReducer,
-		characters: charactersReducer,
-	},
+const reducer = combineReducers({
+	loading: loadingReducer,
+	favourites: favouritesReducer,
+	characters: charactersReducer,
 });
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
-export type AppStore = typeof store;
+export const setupStore = (preloadedState?: Partial<RootState>) => {
+	return configureStore({
+		reducer,
+		preloadedState,
+	});
+};
+
+export const store = setupStore();
+
+export type RootState = ReturnType<typeof reducer>;
+export type AppStore = ReturnType<typeof setupStore>;
+export type AppDispatch = AppStore['dispatch'];
