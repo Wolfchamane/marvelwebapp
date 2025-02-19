@@ -18,7 +18,9 @@ export default defineConfig(({ mode }) => ({
 	test: {
 		globals: true,
 		environment: 'happy-dom',
-		setupFiles: ['./tests/unit/setup.js'],
+		setupFiles: [
+			'dotenv/config',
+			'./tests/unit/setup.js'],
 		coverage: {
 			thresholds: {
 				100: true,
