@@ -8,7 +8,7 @@ import { store } from './app/store';
 function loadServiceWorker(): void {
 	if ('serviceWorker' in navigator && import.meta.env.PROD) {
 		navigator.serviceWorker
-			.register('/src/sw.js', { type: 'module' })
+			.register(`${import.meta.env.VITE_BASE_PATH}sw.js`, { type: 'module' })
 			.then(() => console.log(`serviceWorker ${import.meta.env.VITE_APP_VERSION} loaded!`))
 			.catch(error => console.error(`Error registering service worker:\n${error}`));
 	}
