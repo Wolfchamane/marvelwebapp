@@ -1,4 +1,4 @@
-const version = import.meta.env.VITE_APP_VERSION;
+const version = '0.2.2';
 const cacheKey = `marvelwebapp::${version}`;
 
 function tomorrow() {
