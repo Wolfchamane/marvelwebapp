@@ -1,3 +1,4 @@
+/* v8 ignore start */
 export * from './alert';
 export * from './carrousel';
 export * from './character-card';
@@ -8,3 +9,4 @@ export * from './navigation-bar';
 export * from './search-form';
 export * from './search-icon';
 export * from './search-input';
+/* v8 ignore stop */
