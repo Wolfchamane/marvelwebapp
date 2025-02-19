@@ -4,7 +4,7 @@
 > This application was part of a job interview process.
 
 - Website: https://wolfchamane.com/marvelwebapp/
-- Version: **0.2.1**
+- Version: **0.2.2**
 
 ![characters](./docs/characters_landing.png)
 
