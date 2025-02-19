@@ -24,10 +24,10 @@ function loadApplication(): void {
 	);
 }
 
-function toggleOffInitVeil():void {
+function toggleOffInitVeil(): void {
 	const timeoutDelay: number = 500;
 	const className: string = 'init_veil';
-	const veil: HTMLElement|null = document.querySelector(`.${className}`);
+	const veil: HTMLElement | null = document.querySelector(`.${className}`);
 	if (veil) {
 		setTimeout(() => {
 			veil.classList.add(`${className}--fade`);
